@@ -1,0 +1,282 @@
+/* Assigning theme colors to variables. */
+:root {
+    --background-dark:#23282c;
+    --light-color:#eaedf0;
+    --medium-color:#bcbfc2;
+    --main-accent-color:#2b8546;
+    --other-accent-color:#b62029;
+    --main-accent--translucent:rgba(43, 133, 70,.7);
+    --featured-accent-translucent:rgba(35, 40, 44, .7);
+    --light-semi-transparent:rgba(234, 237, 240, .2);
+}
+
+html {
+    scroll-behavior:smooth !important;
+}
+
+/* Creating a basic theme for the page */
+body {
+    background-color:var(--background-dark) !important;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+    color:var(--medium-color) !important;
+    font-size:1.7vw !important;
+    line-height:1.4 !important;
+}
+
+/* Because the nav bar is fixed, each section needs extra padding at the top so the heading doesn't get covered by the nav bar. */
+.link-to {
+    padding:60px 25px 25px 25px !important;
+}
+
+#hero {
+    display:flex !important;
+    align-items:flex-start !important;
+    margin-bottom:10% !important;
+    padding-top:60px !important;
+}
+
+.hero img {
+    flex:1 1 auto !important;
+}
+
+#hook {
+    padding-left:7% !important;
+    padding-right:7% !important;
+    padding-top:auto !important;
+    flex:2 2 auto !important;
+    align-self:center !important;
+}
+
+h1 {
+    font-size:450% !important;
+    font-weight:600 !important;
+    font-stretch:expanded !important;
+    padding-bottom:1% !important;
+    color:var(--light-color) !important;
+    
+}
+
+aside p {
+    padding-top:7% !important;
+}
+
+#headline {
+    font-size:185% !important;
+    padding-top:1% !important;
+    padding-bottom:7% !important;
+    border-bottom:4px solid var(--main-accent-color) !important;
+}
+
+h2 {
+    font-size:180% !important;
+    color:var(--main-accent-color) !important;
+    line-height:2 !important;
+    font-family:Arial, Helvetica, sans-serif !important;
+}
+
+p {
+    text-align:justify !important;
+    padding:10px 0px 10px 0px !important;
+}
+
+.highlight {
+    font-weight:600 !important;
+    color:var(--main-accent-color) !important;
+}
+
+.contrast {
+    font-weight:600 !important;
+    color:var(--other-accent-color) !important;
+}
+
+/* Creating a flexbox layout for the work projects, keeping the first (featured) project twice the width of the remaing ones, while allowing the sections to scale and wrap as needed. */
+#projects {
+    display:flex !important;
+    flex-wrap:wrap !important;
+    justify-content:flex-start !important;
+}
+
+.featured-project {
+    flex:0 1 calc(50% - 1.75em) !important;
+    background-color:var(--main-accent-color) !important;
+    border:2px solid var(--light-color) !important;
+    margin-bottom:1em !important;
+    margin-right:1em !important;
+    overflow:hidden !important;
+}
+
+.project {
+    flex:0 1 calc(25% - 1.5em) !important;
+    border:2px solid var(--main-accent-color) !important;
+    margin-bottom:1em !important;
+    margin-right:1em !important;
+    overflow:hidden !important;
+}
+
+h3 {
+    font-size:140% !important;
+    font-style:italic !important;
+    line-height:1.5 !important;
+    padding-left:25px !important;
+    padding-right:25px !important;
+    padding-bottom:5px !important;
+    text-decoration:none !important;
+    color:var(--background-dark) !important;
+    background-color: var(--medium-color) !important;
+    width:fit-content !important;
+    border-radius:2px !important;
+    transform:translateY(25%) !important;
+    border-bottom:3px solid var(--other-accent-color) !important;
+    z-index:2 !important;
+    position:relative !important;
+}
+
+.featured-project h3 {
+    background-color:var(--light-color) !important;
+}
+
+.featured-project a, .project a {
+    z-index:1 !important;
+}
+
+.image-container {
+    background-color: var(--light-color) !important;
+    width:90% !important;
+    font-size:0 !important;
+    line-height:0 !important;
+    position:relative !important;
+}
+
+/* Creting an overlay for the description and tech stack for each project that overlaps the image. */
+.details {
+    flex:1 1 auto !important;
+    width:80% !important;
+    position:relative !important;
+    margin-left:15% !important;
+    margin-top:-25% !important;
+    z-index:2 !important;
+}
+
+.featured-project .details {
+    margin-top:-13% !important;
+}
+
+.description {
+    background-color:var(--main-accent--translucent) !important;
+    font-size:smaller !important;
+    padding:1em !important;
+    color:var(--light-color) !important;
+    text-align:left !important;
+}
+
+.featured-project .description {
+    background-color:var(--featured-accent-translucent) !important;
+    text-align:left !important;
+}
+
+.tech-stack {
+    list-style:none !important;
+    display:flex !important;
+    flex-wrap:wrap !important;
+    justify-content:flex-start !important;
+    gap:10px !important;
+    padding-top:3px !important;
+    font-size:smaller !important;
+    background-color: var(--featured-accent-translucent) !important;
+}
+
+.featured-project .tech-stack {
+    padding-left:1em !important;
+    padding-right:1em !important;
+}
+
+#contact ul {
+    margin-left:4ch !important;
+    line-height:1.7 !important;
+    list-style:none !important;
+}
+
+.contact-icon {
+    font-size:160% !important;
+}
+
+/* Styling the footer. */
+footer {
+    background-color:var(--main-accent-color) !important;
+    margin-top:3% !important;
+}
+
+footer p {
+    text-align:center !important;
+    color:var(--light-color) !important;
+    font-size:1.4vw !important;
+}
+
+/* Styling the various states for the links on the page. */
+a:link {
+    color:var(--light-color) !important;
+    text-decoration:none !important;
+}
+
+a:visited {
+    color:var(--other-accent-color) !important;
+}
+
+a:hover {
+    color:var(--main-accent-color) !important;
+}
+
+.featured-project a:hover img, .project a:hover img {
+    opacity:0.7 !important;
+}
+
+/* Using media queries to determine how many projects appear on each row based on the size of the screen and ensure the text on the page is large enough to read at any screen size. */
+@media screen and (max-width:768px) {
+    body {
+        font-size:18px !important;
+    }
+
+    h1 {
+        font-size:300% !important;
+    }
+
+    #headline {
+        font-size:170% !important;
+    }
+
+    #projects {
+        justify-content:space-between !important;
+    }
+
+    .featured-project {
+        flex: 0 1 100% !important;
+        margin-right: 0em !important;
+    }
+    
+    .project {
+        flex: 0 1 calc(50% - 1em) !important;
+        margin-right: 0em !important;
+    }
+
+    footer p {
+        font-size:14px !important;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #projects {
+        display:block !important;
+    }
+
+    .featured-project a img {
+        width:100% !important;
+    }
+
+    .project a img {
+        /* width:50%; */
+    }
+
+    .project a .image-container {
+        width:50% !important;
+    }
+}

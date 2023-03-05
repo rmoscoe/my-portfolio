@@ -1,0 +1,29 @@
+nav {
+    display:flex !important;
+    justify-content:flex-start !important;
+    margin-left:20px !important;
+    margin-right:20px !important;
+    line-height:3 !important;
+}
+
+.nav-link {
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-size:20px !important;
+    color:var(--light-color) !important;
+    flex: .1 1 auto !important;
+    
+}
+
+.active {
+    color:var(--other-accent-color) !important;
+    font-weight:600;
+}
+
+nav a:visited {
+    color:var(--light-color) !important;
+    text-decoration:none !important;
+}
+
+nav a:hover {
+    color:var(--main-accent-color) !important;
+}
