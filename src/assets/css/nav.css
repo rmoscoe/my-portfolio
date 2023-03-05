@@ -15,8 +15,8 @@ nav {
 }
 
 .active {
-    color:var(--other-accent-color) !important;
-    font-weight:600;
+    color:var(--background-dark) !important;
+    background-color:var(--light-color) !important;
 }
 
 nav a:visited {

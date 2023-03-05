@@ -80,13 +80,6 @@ p {
     padding:10px 0px 10px 0px !important;
 }
 
-/* Creating a flexbox layout for the work projects, keeping the first (featured) project twice the width of the remaing ones, while allowing the sections to scale and wrap as needed. */
-#projects {
-    display:flex !important;
-    flex-wrap:wrap !important;
-    justify-content:flex-start !important;
-}
-
 .featured-project {
     flex:0 1 calc(50% - 1.75em) !important;
     background-color:var(--main-accent-color) !important;

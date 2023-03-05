@@ -1,0 +1,8 @@
+.port-control {
+    border-color:var(--main-accent-color) !important;
+    color:var(--main-accent-color) !important;
+}
+
+.dropdown-content {
+    background-color:var(--background-dark) !important;
+}
