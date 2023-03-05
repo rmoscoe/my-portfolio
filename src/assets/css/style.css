@@ -37,6 +37,7 @@ body {
 
 .hero img {
     flex:1 1 auto !important;
+    width:30% !important;
 }
 
 #hook {
@@ -77,16 +78,6 @@ h2 {
 p {
     text-align:justify !important;
     padding:10px 0px 10px 0px !important;
-}
-
-.highlight {
-    font-weight:600 !important;
-    color:var(--main-accent-color) !important;
-}
-
-.contrast {
-    font-weight:600 !important;
-    color:var(--other-accent-color) !important;
 }
 
 /* Creating a flexbox layout for the work projects, keeping the first (featured) project twice the width of the remaing ones, while allowing the sections to scale and wrap as needed. */

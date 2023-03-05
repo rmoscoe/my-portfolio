@@ -14,6 +14,15 @@ function App() {
     <>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <main>
+        <section id="hero">
+          <img src="./assets/images/Headshot_rectangular.jpg" id="headshot"
+            alt="professional headshot" />
+          <aside id="hook">
+            <h1>Ryan Moscoe</h1>
+            <p id="headline">Software Engineer | Problem Solver | Ninja</p>
+            <p>If you are looking for a coding ninja, look no further. I code in Java, Python, C, JavaScript, HTML, and CSS. In my spare time, I practice--you guessed it--ninjutsu.</p>
+          </aside>
+        </section>
         <PortfolioContainer currentPage={currentPage} />
       </main>
       <Footer />

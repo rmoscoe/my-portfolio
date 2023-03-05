@@ -1,0 +1,9 @@
+.highlight {
+    font-weight:600 !important;
+    color:var(--main-accent-color) !important;
+}
+
+.contrast {
+    font-weight:600 !important;
+    color:var(--other-accent-color) !important;
+}
