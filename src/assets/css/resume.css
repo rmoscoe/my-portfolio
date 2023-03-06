@@ -1,0 +1,12 @@
+.experience {
+    background-color:var(--background-accent) !important;
+}
+
+.emphasis {
+    color:var(--main-accent-color) !important;
+    font-weight: 600 !important;
+}
+
+.italic {
+    font-style: italic !important;
+}
