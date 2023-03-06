@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useCallback } from "react";
+import Tech from "./tech";
 import "../assets/css/project.css";
 
-export default function Project (props) {
+export default function Project(props) {
     const techIcons = {
         CSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
         JavaScript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        "Node.js":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg",
+        "Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg",
         MySQL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg",
         Sequelize: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg",
         "Express.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
@@ -36,7 +37,7 @@ export default function Project (props) {
                                 {project.videoLink ? <li className="project-link"><a href={project.videoLink} target="_blank" rel="noreferrer"><i className="fa-solid fa-clapperboard"></i></a></li> : <span></span>}
                                 <li className="project-link">
                                     <a href={project.githubLink} target="_blank" rel="noreferrer">
-                                    <i className="fa-brands fa-github"></i>
+                                        <i className="fa-brands fa-github"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -46,6 +47,21 @@ export default function Project (props) {
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div classList="details column is-half pl-3 is-hidden-mobile is-justify-content-flex-end">
+                    <ul className="project-links">
+                        {project.deployedLink ? <li className="project-link"><a href={project.deployedLink} target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a></li> : <span></span>}
+                        {project.videoLink ? <li className="project-link"><a href={project.videoLink} target="_blank" rel="noreferrer"><i className="fa-solid fa-clapperboard"></i></a></li> : <span></span>}
+                        <li className="project-link">
+                            <a href={project.githubLink} target="_blank" rel="noreferrer">
+                                <i className="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <p className="box description">{project.description}</p>
+                    <ul className="tech-stack">
+                        <Tech technologies={project.techStack} />
+                    </ul>
                 </div>
             </div>
         </section>
