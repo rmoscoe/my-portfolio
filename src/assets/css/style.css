@@ -8,6 +8,7 @@
     --main-accent--translucent:rgba(43, 133, 70,.7);
     --featured-accent-translucent:rgba(35, 40, 44, .7);
     --light-semi-transparent:rgba(234, 237, 240, .2);
+    --background-accent:#2F333C;
 }
 
 html {
@@ -80,23 +81,6 @@ p {
     padding:10px 0px 10px 0px !important;
 }
 
-.featured-project {
-    flex:0 1 calc(50% - 1.75em) !important;
-    background-color:var(--main-accent-color) !important;
-    border:2px solid var(--light-color) !important;
-    margin-bottom:1em !important;
-    margin-right:1em !important;
-    overflow:hidden !important;
-}
-
-.project {
-    flex:0 1 calc(25% - 1.5em) !important;
-    border:2px solid var(--main-accent-color) !important;
-    margin-bottom:1em !important;
-    margin-right:1em !important;
-    overflow:hidden !important;
-}
-
 h3 {
     font-size:140% !important;
     font-style:italic !important;
@@ -105,73 +89,14 @@ h3 {
     padding-right:25px !important;
     padding-bottom:5px !important;
     text-decoration:none !important;
-    color:var(--background-dark) !important;
-    background-color: var(--medium-color) !important;
-    width:fit-content !important;
-    border-radius:2px !important;
-    transform:translateY(25%) !important;
-    border-bottom:3px solid var(--other-accent-color) !important;
+    /* color:var(--background-dark) !important;
+    background-color: var(--medium-color) !important; */
+    /* width:fit-content !important; */
+    /* border-radius:2px !important; */
+    /* transform:translateY(25%) !important; */
+    /* border-bottom:3px solid var(--other-accent-color) !important; */
     z-index:2 !important;
-    position:relative !important;
-}
-
-.featured-project h3 {
-    background-color:var(--light-color) !important;
-}
-
-.featured-project a, .project a {
-    z-index:1 !important;
-}
-
-.image-container {
-    background-color: var(--light-color) !important;
-    width:90% !important;
-    font-size:0 !important;
-    line-height:0 !important;
-    position:relative !important;
-}
-
-/* Creting an overlay for the description and tech stack for each project that overlaps the image. */
-.details {
-    flex:1 1 auto !important;
-    width:80% !important;
-    position:relative !important;
-    margin-left:15% !important;
-    margin-top:-25% !important;
-    z-index:2 !important;
-}
-
-.featured-project .details {
-    margin-top:-13% !important;
-}
-
-.description {
-    background-color:var(--main-accent--translucent) !important;
-    font-size:smaller !important;
-    padding:1em !important;
-    color:var(--light-color) !important;
-    text-align:left !important;
-}
-
-.featured-project .description {
-    background-color:var(--featured-accent-translucent) !important;
-    text-align:left !important;
-}
-
-.tech-stack {
-    list-style:none !important;
-    display:flex !important;
-    flex-wrap:wrap !important;
-    justify-content:flex-start !important;
-    gap:10px !important;
-    padding-top:3px !important;
-    font-size:smaller !important;
-    background-color: var(--featured-accent-translucent) !important;
-}
-
-.featured-project .tech-stack {
-    padding-left:1em !important;
-    padding-right:1em !important;
+    /* position:relative !important; */
 }
 
 #contact ul {

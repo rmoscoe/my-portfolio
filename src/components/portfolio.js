@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Project from "./project";
 import MenuItem from "./menuItem";
 import MenuChoice from "./menuChoice";
@@ -7,7 +7,7 @@ import "../assets/css/portfolio.css";
 const fs = require("fs");
 
 
-export default function Portfolio() {
+export default function Portfolio () {
     const [projects, setProjects] = useState([]);
     const [tech, setTech] = useState([]);
     const [team, setTeam] = useState("");
@@ -29,7 +29,7 @@ export default function Portfolio() {
         return projectList;
     }
 
-    function filterProjects(projectArr) {
+    const filterProjects = useCallback((projectArr) => {
         let filteredArr = projectArr;
         if (tech) {
             const techArr = filteredArr.filter((project) => {
@@ -66,7 +66,7 @@ export default function Portfolio() {
             filteredArr = starterArr;
         }
         return filteredArr;
-    }
+    }, [scope, starter, team, tech]);
 
     function sortProjects(projectArr, criteria) {
         switch (criteria) {
@@ -199,7 +199,7 @@ export default function Portfolio() {
         const filteredProjects = filterProjects(projects);
         const sortedProjects = sortProjects(filteredProjects, sort);
         setTransformedProjects(sortedProjects);
-    }, [tech, team, scope, starter, sort, filterProjects, projects]);
+    }, [sort, filterProjects, projects]);
 
     return (
         <section className="link-to">
@@ -297,7 +297,7 @@ export default function Portfolio() {
                     </div>
                 </div>
             </div>
-            <div className="columns">
+            <div className="columns is-desktop">
                 <Project projects={transformedProjects} />
             </div>
         </section>
