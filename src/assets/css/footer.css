@@ -1,0 +1,21 @@
+footer ul {
+    /* margin-left:4ch !important; */
+    line-height:1.7 !important;
+    list-style:none !important;
+}
+
+.contact-icon {
+    font-size:160% !important;
+}
+
+/* Styling the footer. */
+footer {
+    background-color:var(--main-accent-color) !important;
+    margin-top:3% !important;
+}
+
+footer ul li {
+    text-align:center !important;
+    color:var(--light-color) !important;
+    font-size:1.4vw !important;
+}
