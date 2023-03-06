@@ -14,3 +14,7 @@
 .tile {
     color:var(--light-color);
 }
+
+.tile ul {
+    list-style-type: disc;
+}

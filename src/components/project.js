@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React from "react";
 import Tech from "./tech";
 import "../assets/css/project.css";
 

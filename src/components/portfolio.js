@@ -12,8 +12,8 @@ export default function Portfolio() {
             dateCreated: "02/15/2023",
             imageSource: "./assets/images/bulletJournal.jpg",
             imgAlt: "Bullet Journal application screenshot",
-            deployedLink: "https://bulletJournal.herokuapp.com/",
-            githubLink: "https://github.com/megellman/bulletJournal",
+            deployedLink: "https://bullet-journal.herokuapp.com/",
+            githubLink: "https://github.com/megellman/bullet-journal",
             description: "Bullet Journal allows users to organize their thoughts and feelings by creating an unlimited number of journals, which can each contain an unlimited number of entries.",
             techStack: ["CSS", "JavaScript", "Node.js", "MySQL", "Sequelize", "Express.js", "Express-Handlebars", "Bulma", "Heroku"],
             team: "group",
@@ -28,7 +28,7 @@ export default function Portfolio() {
             imageSource: "./assets/images/AddEmployee.jpg",
             imgAlt: "Terminal screenshot showing an employee being added",
             videoLink: "https://drive.google.com/file/d/1Gm278AQvauy9FiAlEyKEf22vmOyIWjy3/view?usp=sharing",
-            githubLink: "https://github.com/rmoscoe/employeeTracker",
+            githubLink: "https://github.com/rmoscoe/employee-tracker",
             description: "This command line application interacts with a MySQL database, representing a sliver of an HRIS. The user can select various actions, including viewing a table with departments, roles, or employees; adding a department, role, or employee; updating an existing employee's role; or exiting the system.",
             techStack: ["JavaScript", "Node.js", "MySQL"],
             team: "solo",
@@ -43,7 +43,7 @@ export default function Portfolio() {
             imageSource: "./assets/images/prompts.jpg",
             imgAlt: "Terminal screenshot showing the prompts accepting input",
             videoLink: "https://drive.google.com/file/d/1lreVZYBKH0te8r_BKABnFH3PhMw0nJqC/view?usp=sharing",
-            githubLink: "https://github.com/rmoscoe/teamProfileGenerator",
+            githubLink: "https://github.com/rmoscoe/team-profile-generator",
             description: "This command line application prompts the user to enter pertinent details about a team manager and as many additional team members as desired. Then the application dynamically generates an HTML file to display the details for each team member. In addition, this project incorporates unit testing using Jest.",
             techStack: ["HTML", "Bootstrap", "JavaScript", "Node.js", "Jest"],
             team: "solo",
@@ -58,8 +58,8 @@ export default function Portfolio() {
             dateCreated: "01/29/2023",
             imageSource: "./assets/images/Note.jpg",
             imgAlt: "Application screenshot showing a note",
-            deployedLink: "https://shelteredAnchorage72122.herokuapp.com/",
-            githubLink: "https://github.com/rmoscoe/noteTaker",
+            deployedLink: "https://sheltered-anchorage72122.herokuapp.com/",
+            githubLink: "https://github.com/rmoscoe/note-taker",
             description: "This app allows a user to save notes in an online repository so they can be retrieved, viewed, and deleted from anywhere. For this project, the front end was provided as starter code and did not require refactoring. The back end had to be created from scratch.",
             techStack: ["JavaScript", "Node.js", "Express.js", "Heroku"],
             team: "solo",
@@ -73,8 +73,8 @@ export default function Portfolio() {
             dateCreated: "12/30/2022",
             imageSource: "./assets/images/Question.jpg",
             imgAlt: "Application screenshot showing a quiz question",
-            deployedLink: "https://rmoscoe.github.io/codeQuizChallenge/",
-            githubLink: "https://github.com/rmoscoe/codeQuizChallenge",
+            deployedLink: "https://rmoscoe.github.io/code-quiz-challenge/",
+            githubLink: "https://github.com/rmoscoe/code-quiz-challenge",
             description: "This quiz presents the user with ten questions about JavaScript in a random order. The quiz has a time limit of 10 minutes, and the user's score is the number of seconds remaining when all questions are answered or time runs out.",
             techStack: ["HTML", "CSS", "JavaScript"],
             team: "solo",
@@ -104,8 +104,8 @@ export default function Portfolio() {
             dateCreated: "01/11/2023",
             imageSource: "./assets/images/Dashboard.jpg",
             imgAlt: "Application screenshot showing a weather forecast",
-            deployedLink: "https://rmoscoe.github.io/weatherDashboard/",
-            githubLink: "https://github.com/rmoscoe/weatherDashboard",
+            deployedLink: "https://rmoscoe.github.io/weather-dashboard/",
+            githubLink: "https://github.com/rmoscoe/weather-dashboard",
             description: "View current weather conditions and a 5Day forecast for a city by searching or retrieving a saved search.",
             techStack: ["HTML", "JavaScript", "jQuery", "Bootstrap", "Day.js"],
             team: "solo",
@@ -119,8 +119,8 @@ export default function Portfolio() {
             dateCreated: "05/15/2022",
             imageSource: "./assets/images/mixedMessages.jpg",
             imgAlt: "Application screenshot showing a generated insult",
-            deployedLink: "https://rmoscoe.github.io/mixedMessages/",
-            githubLink: "https://github.com/rmoscoe/mixedMessages",
+            deployedLink: "https://rmoscoe.github.io/mixed-messages/",
+            githubLink: "https://github.com/rmoscoe/mixed-messages",
             description: "A Shakespearean insult generator that assembles three randomly selected components to form an insult at the push of a button.",
             techStack: ["HTML", "CSS", "JavaScript"],
             team: "solo",
@@ -134,8 +134,8 @@ export default function Portfolio() {
             dateCreated: "12/14/2022",
             imageSource: "./assets/images/Horiseon.jpg",
             imgAlt: "Screenshot showing the refactored website",
-            deployedLink: "https://rmoscoe.github.io/marketingRefactor/",
-            githubLink: "https://github.com/rmoscoe/marketingRefactor",
+            deployedLink: "https://rmoscoe.github.io/marketing-refactor/",
+            githubLink: "https://github.com/rmoscoe/marketing-refactor",
             description: "Horiseon, a fictitious marketing agency, requested a refactoring of its website to improve accessibility. This project included several improvements to the existing code.",
             techStack: ["HTML", "CSS"],
             team: "solo",
@@ -149,8 +149,8 @@ export default function Portfolio() {
             dateCreated: "01/18/2023",
             imageSource: "./assets/images/SearchResults.jpg",
             imgAlt: "Application screenshot showing the dashboard",
-            deployedLink: "https://justhenner.github.io/readingIsFun/",
-            githubLink: "https://github.com/justhenner/readingIsFun",
+            deployedLink: "https://justhenner.github.io/reading-is-fun/",
+            githubLink: "https://github.com/justhenner/reading-is-fun",
             description: "View information from Google Books and save favorites with this app.",
             techStack: ["HTML", "CSS", "JavaScript", "Bulma", "UmbrellaJS"],
             team: "group",
@@ -164,8 +164,8 @@ export default function Portfolio() {
             dateCreated: "12/22/2022",
             imageSource: "./assets/images/Password.jpg",
             imgAlt: "Application screenshot showing a generated password",
-            deployedLink: "https://rmoscoe.github.io/passwordGenerator",
-            githubLink: "https://github.com/rmoscoe/passwordGenerator",
+            deployedLink: "https://rmoscoe.github.io/password-generator",
+            githubLink: "https://github.com/rmoscoe/password-generator",
             description: "This app randomly generates a password according to criteria the user specifies.",
             techStack: ["JavaScript"],
             team: "solo",
@@ -179,8 +179,8 @@ export default function Portfolio() {
             dateCreated: "03/01/2023",
             imageSource: "./assets/images/JATE.png",
             imgAlt: "Application screenshot showing the editor launching in the browser",
-            deployedLink: "https://vastWave58973.herokuapp.com/",
-            githubLink: "https://github.com/rmoscoe/textEditor",
+            deployedLink: "https://vast-wave58973.herokuapp.com/",
+            githubLink: "https://github.com/rmoscoe/text-editor",
             description: "This progressive web app (PWA) loads a basic text editor in a browser. The editor automatically saves text entered by the user in a clientSide database using IndexedDB and retrieves the user's saved text on load. In addition, the user can install the editor as an app for offline use.",
             techStack: ["JavaScript", "Node.js", "Webpack", "IndexedDB", "Concurrently", "Heroku"],
             team: "solo",
@@ -193,10 +193,10 @@ export default function Portfolio() {
             id: 13,
             name: "Social Network API",
             dateCreated: "02/27/2023",
-            imageSource: "./assets/images/socialNetworkApi.png",
+            imageSource: "./assets/images/social-network-api.png",
             imgAlt: "Screenshot showing API routes being tested in Insomnia",
             videoLink: "https://drive.google.com/file/d/1rPIdWe4D88s7tA4qS12kakkzTLXSyi6Q/view?usp=share_link",
-            githubLink: "https://github.com/rmoscoe/socialNetworkApi",
+            githubLink: "https://github.com/rmoscoe/social-network-api",
             description: "This project consists of a MongoDB database and routes to create, read, update, and delete data from the database. The database includes models for users and thoughts, with the thought model containing a subdocument for reactions. Users have a friends list, facilitating relationships with other users. In addition, thoughts and reactions reference users as owners, and users have a list of thoughts.",
             techStack: ["JavaScript", "Node.js", "MongoDB", "Mongoose", "Express.js"],
             team: "solo",
@@ -205,9 +205,9 @@ export default function Portfolio() {
             defaultPosition: 5
         }
     ]);
-    const [tech, setTech] = useState([]);
+    const [tech, setTech] = useState();
     const [team, setTeam] = useState("");
-    const [scope, setScope] = useState([]);
+    const [scope, setScope] = useState();
     const [starter, setStarter] = useState(null);
     const [sort, setSort] = useState("default");
     const [technologies, setTechnologies] = useState([]);
@@ -220,6 +220,7 @@ export default function Portfolio() {
     const filterProjects = useCallback((projectArr) => {
         let filteredArr = projectArr;
         if (tech) {
+            console.log()
             const techArr = filteredArr.filter((project) => {
                 for (let i = 0; i < tech.length; i++) {
                     if (project.techStack.includes(tech[i])) {
@@ -303,24 +304,27 @@ export default function Portfolio() {
         }
     }
 
-    const techList = [];
-    projects.forEach((project) => {
-        for (let i = 0; i < project.techStack.length; i++) {
-            if (techList.indexOf(project.techStack[i]) === -1) {
-                techList.push(project.techStack[i]);
+    useEffect(() => {
+        const techList = [];
+        projects.forEach((project) => {
+            for (let i = 0; i < project.techStack.length; i++) {
+                if (techList.indexOf(project.techStack[i]) === -1) {
+                    techList.push(project.techStack[i]);
+                }
             }
-        }
-    });
-    techList.sort((a, b) => {
-        if (a < b) {
-            return -1;
-        }
-        if (a > b) {
-            return 1;
-        }
-        return 0;
-    });
-    setTechnologies(techList);
+        });
+        techList.sort((a, b) => {
+            if (a < b) {
+                return -1;
+            }
+            if (a > b) {
+                return 1;
+            }
+            return 0;
+        });
+        setTechnologies(techList);
+    }, [projects]);
+
 
     function handleTechChange(event) {
         event.preventDefault();
@@ -378,12 +382,11 @@ export default function Portfolio() {
         setSort(event.target.textContent);
     }
 
-    setTransformedProjects(projects => {
+    useEffect(() => {
         const filteredProjects = filterProjects(projects);
         const sortedProjects = sortProjects(filteredProjects, sort);
-        return sortedProjects;
-      });
-      
+        setTransformedProjects(sortedProjects);
+      }, [projects, sort]);
 
     return (
         <section className="link-to">
@@ -481,7 +484,7 @@ export default function Portfolio() {
                     </div>
                 </div>
             </div>
-            <div className="columns is-desktop">
+            <div className="columns is-desktop is-flex-wrap-wrap">
                 <Project projects={transformedProjects} />
             </div>
         </section>

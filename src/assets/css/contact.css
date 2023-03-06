@@ -1,3 +1,7 @@
-label {
-    color:var(--medium-color);
+.label {
+    color:var(--medium-color) !important;
+}
+
+textarea {
+    width:100% !important;
 }

@@ -41,6 +41,29 @@ export default function Contact() {
         }
     };
 
+    const handleEmailLoseFocus = (e) => {
+        if (!validateEmail(email)) {
+            setErrorMessage('Email is invalid');
+            return;
+        }
+    }
+
+    const handleNameLoseFocus = (e) => {
+        if (!contactName) {
+            setErrorMessage("Please enter your name");
+            return;
+        }
+    }
+
+    const handleMessageLoseFocus = (e) => {
+        if (!message) {
+            setErrorMessage(
+                "Please enter a message to send"
+            );
+            return;
+        }
+    }
+
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
@@ -70,7 +93,7 @@ export default function Contact() {
     return (
         <section className="link-to">
             <h2>Contact</h2>
-            <form className="form">
+            <form className="form" onSubmit={handleFormSubmit}>
                 <div className="field">
                     <label className="label">Email</label>
                     <div className="control">
@@ -79,11 +102,12 @@ export default function Contact() {
                             value={email}
                             name="email"
                             onChange={handleInputChange}
-                            type="email"
+                            type="text"
                             placeholder="Email"
+                            onBlur={handleEmailLoseFocus}
                         />
                     </div>
-                    <p className="help is-danger">{errorMessage}</p>
+                    {/* <p className="help is-danger">{errorMessage}</p> */}
                 </div>
                 <div className="field">
                     <label className="label">Name</label>
@@ -95,11 +119,12 @@ export default function Contact() {
                             onChange={handleInputChange}
                             type="text"
                             placeholder="Name"
+                            onBlur={handleNameLoseFocus}
                         />
                     </div>
-                    <p className="help is-danger">{errorMessage}</p>
+                    {/* <p className="help is-danger">{errorMessage}</p> */}
                 </div>
-                <div className="field">
+                <div className="field w-100">
                     <label className="label">Message</label>
                     <textarea
                         value={message}
@@ -107,18 +132,20 @@ export default function Contact() {
                         onChange={handleInputChange}
                         type="textarea"
                         placeholder="Message"
+                        onBlur={handleMessageLoseFocus}
+                        rows="5"
                     />
-                    <p className="help is-danger">{errorMessage}</p>
+                    {/* <p className="help is-danger">{errorMessage}</p> */}
                 </div>
                 <div className="control">
-                    <input type="submit" onClick={handleFormSubmit} />
+                    <input type="submit" />
                 </div>
             </form>
-            {/* {errorMessage && (
+            {errorMessage && (
                 <div>
                     <p className="error-text">{errorMessage}</p>
                 </div>
-            )} */}
+            )}
         </section>
     )
 }
