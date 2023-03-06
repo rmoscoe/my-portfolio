@@ -28,7 +28,7 @@ export default function Project(props) {
                         </div>
                     </div>
                 </div>
-                <div classList="details column is-half pl-3 is-hidden-mobile is-justify-content-flex-end">
+                <div className="details column is-half pl-3 is-hidden-mobile is-justify-content-flex-end">
                     <ul className="project-links">
                         {project.deployedLink && <li className="project-link"><a href={project.deployedLink} target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a></li>}
                         {project.videoLink && <li className="project-link"><a href={project.videoLink} target="_blank" rel="noreferrer"><i className="fa-solid fa-clapperboard"></i></a></li>}

@@ -21,8 +21,8 @@ export default function Skill () {
     }];
 
     return skills.map((skill, i) => (
-        <div className="tile is-child skill">
-            <p className="is-size-5 has-text-weight-semi-bold">{skill.category}</p>
+        <div key={i} className="tile is-child skill p-3">
+            <p className="is-size-4 has-text-weight-semi-bold">{skill.category}</p>
             <Subskill subskills={skill.details} />
         </div>
     ));

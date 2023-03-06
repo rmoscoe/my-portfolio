@@ -1,10 +1,6 @@
 import React from "react";
 import "../assets/css/footer.css";
 
-// <i class="fa-solid fa-envelope"></i>
-// <i class="fa-brands fa-linkedin"></i>
-// <i class="fa-brands fa-github"></i>
-// <i class="fa-solid fa-mobile-screen"></i>
 
 export default function Footer() {
     return (
@@ -32,7 +28,7 @@ export default function Footer() {
                 </li>
                 <li>
                     <a href="https://medium.com/@ryanmoscoe" target="_blank" rel="noreferrer">
-                        <i class="fa-brands fa-medium"></i>
+                        <i className="fa-brands fa-medium"></i>
                         <span>Medium</span>
                     </a>
                 </li>

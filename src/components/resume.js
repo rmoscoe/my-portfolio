@@ -2,7 +2,7 @@ import React from "react";
 import Skill from "./skill";
 import "../assets/css/resume.css";
 
-export default function Resume () {
+export default function Resume() {
     function downloadResume() {
         fetch("Ryan Moscoe Resume.docx")
             .then(response => {
@@ -23,7 +23,7 @@ export default function Resume () {
             <section className="hero">
                 <section className="hero-body justify-content-center align-content-center">
                     <p className="is-size-4 has-text-centered" onClick={downloadResume}>
-                        <i class="fa-regular fa-file-word"></i>
+                        <i className="fa-regular fa-file-word"></i>
                         <span className="ml-2">Download Resume</span>
                     </p>
                 </section>
@@ -63,10 +63,14 @@ export default function Resume () {
                             <span className="emphasis">Certificate</span>
                             , March 2023, Berkeley Coding Bootcamp, University of California, Berkeley
                         </p>
+                    </div>
+                    <div className="tile is-child box experience">
                         <p>
                             <span className="emphasis">Master of Arts (M.A.) in Leadership Studies</span>
                             , University of San Diego, San Diego, CA
                         </p>
+                    </div>
+                    <div className="tile is-child box experience">
                         <p>
                             <span className="emphasis">Bachelor of Arts (B.A.) in History</span>
                             , Metropolitan State University, Saint Paul, MN

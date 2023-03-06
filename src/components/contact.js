@@ -72,7 +72,7 @@ export default function Contact() {
             <h2>Contact</h2>
             <form className="form">
                 <div className="field">
-                    <label for="email" className="label">Email</label>
+                    <label className="label">Email</label>
                     <div className="control">
                         <input
                             className="input"
@@ -83,10 +83,10 @@ export default function Contact() {
                             placeholder="Email"
                         />
                     </div>
-                    <p class="help is-danger">{errorMessage}</p>
+                    <p className="help is-danger">{errorMessage}</p>
                 </div>
                 <div className="field">
-                    <label for="contactName" className="label">Name</label>
+                    <label className="label">Name</label>
                     <div className="control">
                         <input
                             className="input"
@@ -97,10 +97,10 @@ export default function Contact() {
                             placeholder="Name"
                         />
                     </div>
-                    <p class="help is-danger">{errorMessage}</p>
+                    <p className="help is-danger">{errorMessage}</p>
                 </div>
                 <div className="field">
-                    <label for="message" className="label">Message</label>
+                    <label className="label">Message</label>
                     <textarea
                         value={message}
                         name="message"
@@ -108,10 +108,10 @@ export default function Contact() {
                         type="textarea"
                         placeholder="Message"
                     />
-                    <p class="help is-danger">{errorMessage}</p>
+                    <p className="help is-danger">{errorMessage}</p>
                 </div>
                 <div className="control">
-                    <input type="submit" onClick={handleFormSubmit}>Submit</input>
+                    <input type="submit" onClick={handleFormSubmit} />
                 </div>
             </form>
             {/* {errorMessage && (

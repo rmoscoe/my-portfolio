@@ -9,14 +9,14 @@ nav {
 .nav-link {
     font-family:Arial, Helvetica, sans-serif !important;
     font-size:20px !important;
-    color:var(--light-color) !important;
+    color:var(--light-color);
     flex: .1 1 auto !important;
-    
+    padding:0em 1em 0em 1em;
 }
 
 .active {
-    color:var(--background-dark) !important;
-    background-color:var(--light-color) !important;
+    color:var(--medium-color) !important;
+    background-color:var(--light-semi-transparent) !important;
 }
 
 nav a:visited {

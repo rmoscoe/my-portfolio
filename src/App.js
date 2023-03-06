@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/header";
 import Footer from "./components/footer";
 import PortfolioContainer from "./components/portfolioContainer";
+import "./assets/css/bulma.min.css";
 import "./assets/css/style.css"
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <main>
         <section id="hero">
-          <img src="./assets/images/Headshot_rectangular.jpg" id="headshot"
+          <img className="hero-img" src="./images/Headshot_rectangular.jpg" id="headshot"
             alt="professional headshot" />
           <aside id="hook">
             <h1>Ryan Moscoe</h1>

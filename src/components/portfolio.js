@@ -378,11 +378,12 @@ export default function Portfolio() {
         setSort(event.target.textContent);
     }
 
-    useEffect(() => {
+    setTransformedProjects(projects => {
         const filteredProjects = filterProjects(projects);
         const sortedProjects = sortProjects(filteredProjects, sort);
-        setTransformedProjects(sortedProjects);
-    }, [sort, filterProjects, projects]);
+        return sortedProjects;
+      });
+      
 
     return (
         <section className="link-to">
