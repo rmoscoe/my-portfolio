@@ -15,10 +15,6 @@
     overflow:hidden !important;
 }
 
-.filter-white {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-}
-
 /* .featured-project h3 {
     background-color:var(--light-color) !important;
 } */
@@ -98,7 +94,7 @@
     gap:10px !important;
     padding-top:3px !important;
     font-size:smaller !important;
-    background-color: var(--featured-accent-translucent) !important;
+    /* background-color: var(--featured-accent-translucent) !important; */
 }
 
 /* .featured-project .tech-stack {

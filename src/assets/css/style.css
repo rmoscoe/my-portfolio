@@ -135,9 +135,9 @@ a:hover {
     color:var(--main-accent-color) !important;
 }
 
-.featured-project a:hover img, .project a:hover img {
+/* .featured-project a:hover img, .project a:hover img {
     opacity:0.7 !important;
-}
+} */
 
 /* Using media queries to determine how many projects appear on each row based on the size of the screen and ensure the text on the page is large enough to read at any screen size. */
 @media screen and (max-width:768px) {
@@ -157,22 +157,22 @@ a:hover {
         justify-content:space-between !important;
     }
 
-    .featured-project {
+    /* .featured-project {
         flex: 0 1 100% !important;
         margin-right: 0em !important;
-    }
+    } */
     
-    .project {
+    /* .project {
         flex: 0 1 calc(50% - 1em) !important;
         margin-right: 0em !important;
     }
 
     footer p {
         font-size:14px !important;
-    }
+    } */
 }
 
-@media screen and (max-width:480px) {
+/* @media screen and (max-width:480px) {
     #projects {
         display:block !important;
     }
@@ -183,9 +183,9 @@ a:hover {
 
     .project a img {
         /* width:50%; */
-    }
+    /* }
 
     .project a .image-container {
         width:50% !important;
-    }
-}
+    } */
+/* } */
