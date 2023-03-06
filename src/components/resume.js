@@ -2,7 +2,7 @@ import React from "react";
 import Skill from "./skill";
 import "../assets/css/resume.css";
 
-export default function Resume() {
+export default function Resume () {
     function downloadResume() {
         fetch("Ryan Moscoe Resume.docx")
             .then(response => {
