@@ -27,3 +27,11 @@ nav a:visited {
 nav a:hover {
     color:var(--main-accent-color) !important;
 }
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: block !important;
+        line-height:1 !important;
+    }
+
+}
