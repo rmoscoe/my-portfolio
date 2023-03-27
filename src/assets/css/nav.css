@@ -9,7 +9,7 @@ nav {
 .nav-link {
     font-family:Arial, Helvetica, sans-serif !important;
     font-size:20px !important;
-    color:var(--light-color);
+    color:var(--light-color) !important;
     flex: .1 1 auto !important;
     padding:0em 1em 0em 1em;
 }
@@ -31,7 +31,15 @@ nav a:hover {
 @media screen and (max-width: 768px) {
     nav {
         display: block !important;
-        line-height:1 !important;
+        line-height:1.5 !important;
+        margin-left:0px !important;
+        margin-right:0px !important;
     }
 
+    nav a {
+        display: block;
+        text-align:center;
+        border-bottom:1px solid var(--background-accent);
+        box-shadow:0px 2px 5px #14171a !important;
+    }
 }

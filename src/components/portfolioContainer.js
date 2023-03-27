@@ -5,13 +5,11 @@ import Portfolio from './portfolio';
 import Resume from "./resume";
 
 export default function PortfolioContainer({ currentPage }) {
-    console.log("PortfolioContainer");
     const renderPage = () => {
         switch (currentPage) {
             case 'About':
                 return <About />;
             case 'Portfolio':
-                console.log("case Portfolio");
                 return <Portfolio />;
             case 'Contact':
                 return <Contact />;

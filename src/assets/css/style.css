@@ -12,7 +12,7 @@
 }
 
 html {
-    scroll-behavior:smooth !important;
+    /* scroll-behavior:smooth !important; */
     background-color: var(--background-dark);
 }
 
@@ -27,16 +27,16 @@ body {
 
 /* Because the nav bar is fixed, each section needs extra padding at the top so the heading doesn't get covered by the nav bar. */
 .link-to {
-    padding:60px 25px 3% 25px !important;
-    margin-bottom:2%;
+    padding:3% 25px 3% 25px !important;
+    /* margin-bottom:2%; */
 }
 
 #hero {
     display:flex !important;
     align-items:flex-start !important;
-    margin-bottom:10% !important;
+    margin-bottom:2% !important;
     padding-top:60px !important;
-    margin-top:1% !important;
+    margin-top:2% !important;
 }
 
 .hero-img {

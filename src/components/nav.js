@@ -8,6 +8,7 @@ export default function Nav({ currentPage, handlePageChange }) {
             <nav>
                 <a
                     href="#about"
+                    // href="/"
                     onClick={() => handlePageChange("About")}
                     className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
                 >
@@ -21,18 +22,18 @@ export default function Nav({ currentPage, handlePageChange }) {
                     Portfolio
                 </a>
                 <a
-                    href="#contact"
-                    onClick={() => handlePageChange("Contact")}
-                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-                >
-                    Contact
-                </a>
-                <a
                     href="#resume"
                     onClick={() => handlePageChange("Resume")}
                     className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
                 >
                     Resume
+                </a>
+                <a
+                    href="#contact"
+                    onClick={() => handlePageChange("Contact")}
+                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                >
+                    Contact
                 </a>
             </nav>
         </header>
