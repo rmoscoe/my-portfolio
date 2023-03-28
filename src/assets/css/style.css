@@ -72,6 +72,12 @@ aside p {
     border-bottom:4px solid var(--main-accent-color) !important;
 }
 
+.headline-mobile {
+    font-size:185% !important;
+    padding-top:1% !important;
+    padding-bottom:7% !important;
+}
+
 h2 {
     font-size:180% !important;
     color:var(--main-accent-color) !important;
@@ -100,6 +106,14 @@ h3 {
     /* border-bottom:3px solid var(--other-accent-color) !important; */
     z-index:2 !important;
     /* position:relative !important; */
+}
+
+.is-overlay {
+    z-index: 1000;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%);
 }
 
 .has-background-transparent {

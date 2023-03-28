@@ -15,25 +15,25 @@ function App() {
     <>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <main>
-          <div className="is-hidden-tablet">
-            <div className="image-container">
-              <img className="headshot" src="./images/Headshot_rectangular.jpg"
-                alt="professional headshot" />
-            </div>
-            <div className="card is-overlay is-align-self-center has-background-transparent">
-              <h1 className="has-background-transparent">Ryan Moscoe</h1>
-              <p className="headline has-background-transparent">Software Engineer | Problem Solver | Ninja</p>
-            </div>
-          </div>
-          <section id="hero" className="is-hidden-mobile">
-            <img className="hero-img headshot" src="./images/Headshot_rectangular.jpg"
+        <div className="is-hidden-tablet is-relative">
+          <div className="image-container">
+            <img className="headshot" src="./images/Headshot_rectangular.jpg"
               alt="professional headshot" />
-            <aside id="hook">
-              <h1>Ryan Moscoe</h1>
-              <p className="headline">Software Engineer | Problem Solver | Ninja</p>
-              <p>If you are looking for a coding ninja, look no further. I code in Java, Python, C, JavaScript, HTML, and CSS. In my spare time, I practice--you guessed it--ninjutsu.</p>
-            </aside>
-          </section>
+          </div>
+          <div className="container is-overlay is-align-self-center has-background-transparent">
+            <h1 className="has-background-transparent">Ryan Moscoe</h1>
+            <p className="headline-mobile has-background-transparent">Software Engineer | Problem Solver | Ninja</p>
+          </div>
+        </div>
+        <section id="hero" className="is-hidden-mobile">
+          <img className="hero-img headshot" src="./images/Headshot_rectangular.jpg"
+            alt="professional headshot" />
+          <aside id="hook">
+            <h1>Ryan Moscoe</h1>
+            <p className="headline">Software Engineer | Problem Solver | Ninja</p>
+            <p>If you are looking for a coding ninja, look no further. I code in Java, Python, C, JavaScript, HTML, and CSS. In my spare time, I practice--you guessed it--ninjutsu.</p>
+          </aside>
+        </section>
         <PortfolioContainer currentPage={currentPage} />
       </main>
       <Footer />
