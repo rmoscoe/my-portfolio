@@ -32,7 +32,7 @@ body {
 }
 
 #hero {
-    display:flex !important;
+    display:flex;
     align-items:flex-start !important;
     margin-bottom:2% !important;
     padding-top:60px !important;
@@ -65,7 +65,7 @@ aside p {
     padding-top:7% !important;
 }
 
-#headline {
+.headline {
     font-size:185% !important;
     padding-top:1% !important;
     padding-bottom:7% !important;
@@ -100,6 +100,10 @@ h3 {
     /* border-bottom:3px solid var(--other-accent-color) !important; */
     z-index:2 !important;
     /* position:relative !important; */
+}
+
+.has-background-transparent {
+    background-color: transparent !important;
 }
 
 /* Styling the various states for the links on the page. */
