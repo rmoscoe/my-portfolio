@@ -5,7 +5,7 @@ export default function Contact() {
     const [email, setEmail] = useState('');
     const [contactName, setcontactName] = useState('');
     const [message, setMessage] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
+    const [notification, setNotification] = useState('');
     const [submitted, setSubmitted] = useState(false);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState();
@@ -13,9 +13,9 @@ export default function Contact() {
     const sendEmail = (data) => {
         setLoading(true);
         setSubmitted(false);
-        setErrorMessage(undefined);
+        setNotification(undefined);
 
-        fetch(endpointUrl, {
+        fetch("https://public.herotofu.com/v1/0c8d6c10-ce4a-11ed-9434-5b53665d9a66", {
             method: 'POST',
             headers: {
                 Accept: "application/json",
@@ -59,20 +59,20 @@ export default function Contact() {
             setMessage(inputValue);
         }
 
-        switch (errorMessage) {
+        switch (notification) {
             case "Email is invalid":
                 if (inputType === "email") {
-                    setErrorMessage("");
+                    setNotification("");
                 }
                 break;
             case "Please enter your name":
                 if (inputType === "contactName") {
-                    setErrorMessage("");
+                    setNotification("");
                 }
                 break;
             case "Please enter a message to send":
                 if (inputType === "message") {
-                    setErrorMessage("");
+                    setNotification("");
                 }
                 break;
             default:
@@ -82,21 +82,21 @@ export default function Contact() {
 
     const handleEmailLoseFocus = (e) => {
         if (!validateEmail(email)) {
-            setErrorMessage('Email is invalid');
+            setNotification('Email is invalid');
             return;
         }
     }
 
     const handleNameLoseFocus = (e) => {
         if (!contactName) {
-            setErrorMessage("Please enter your name");
+            setNotification("Please enter your name");
             return;
         }
     }
 
     const handleMessageLoseFocus = (e) => {
         if (!message) {
-            setErrorMessage(
+            setNotification(
                 "Please enter a message to send"
             );
             return;
@@ -107,25 +107,41 @@ export default function Contact() {
         e.preventDefault();
 
         if (!validateEmail(email)) {
-            setErrorMessage('Email is invalid');
+            setNotification('Email is invalid');
             return;
 
         }
         if (!contactName) {
-            setErrorMessage("Please enter your name");
+            setNotification("Please enter your name");
             return;
         }
         if (!message) {
-            setErrorMessage(
+            setNotification(
                 "Please enter a message to send"
             );
             return;
         }
 
+        const data = {
+            email,
+            contactName,
+            message
+        }
+
+        sendEmail(data);
+
         setcontactName('');
         setMessage('');
         setEmail('');
-        setErrorMessage("This form is for demonstration only. Please use the links below to contact me.")
+        if (submitted) {
+            setNotification("Thank you for reaching out! I will get back to you promptly.");
+        }
+        if (error) {
+            setNotification(error);
+        }
+        if (loading) {
+            setNotification("Sending your message...");
+        }
 
     };
 
@@ -146,7 +162,7 @@ export default function Contact() {
                             onBlur={handleEmailLoseFocus}
                         />
                     </div>
-                    {/* <p className="help is-danger">{errorMessage}</p> */}
+                    {/* <p className="help is-danger">{notification}</p> */}
                 </div>
                 <div className="field">
                     <label className="label">Name</label>
@@ -161,7 +177,7 @@ export default function Contact() {
                             onBlur={handleNameLoseFocus}
                         />
                     </div>
-                    {/* <p className="help is-danger">{errorMessage}</p> */}
+                    {/* <p className="help is-danger">{notification}</p> */}
                 </div>
                 <div className="field w-100">
                     <label className="label">Message</label>
@@ -174,15 +190,15 @@ export default function Contact() {
                         onBlur={handleMessageLoseFocus}
                         rows="5"
                     />
-                    {/* <p className="help is-danger">{errorMessage}</p> */}
+                    {/* <p className="help is-danger">{notification}</p> */}
                 </div>
                 <div className="control">
                     <input type="submit" />
                 </div>
             </form>
-            {errorMessage && (
+            {notification && (
                 <div>
-                    <p className="error-text">{errorMessage}</p>
+                    <p className="error-text">{notification}</p>
                 </div>
             )}
         </section>
