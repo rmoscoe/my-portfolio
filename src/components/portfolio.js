@@ -19,7 +19,7 @@ export default function Portfolio() {
             team: "group",
             scope: "full-stack",
             starterCode: false,
-            defaultPosition: 1
+            defaultPosition: 5
         },
         {
             id: 2,
@@ -34,7 +34,7 @@ export default function Portfolio() {
             team: "solo",
             scope: "back-end",
             starterCode: false,
-            defaultPosition: 3
+            defaultPosition: 15
         },
         {
             id: 3,
@@ -50,7 +50,7 @@ export default function Portfolio() {
             scope: "back-end",
             skills: ["unit testing"],
             starterCode: false,
-            defaultPosition: 4
+            defaultPosition: 20
         },
         {
             id: 4,
@@ -65,7 +65,7 @@ export default function Portfolio() {
             team: "solo",
             scope: "back-end",
             starterCode: true,
-            defaultPosition: 6
+            defaultPosition: 30
         },
         {
             id: 5,
@@ -80,7 +80,7 @@ export default function Portfolio() {
             team: "solo",
             scope: "front-end",
             starterCode: false,
-            defaultPosition: 7
+            defaultPosition: 35
         },
         {
             id: 6,
@@ -96,7 +96,7 @@ export default function Portfolio() {
             scope: "back-end",
             skills: ["unit testing"],
             starterCode: false,
-            defaultPosition: 8
+            defaultPosition: 40
         },
         {
             id: 7,
@@ -111,7 +111,7 @@ export default function Portfolio() {
             team: "solo",
             scope: "front-end",
             starterCode: false,
-            defaultPosition: 9
+            defaultPosition: 45
         },
         {
             id: 8,
@@ -126,7 +126,7 @@ export default function Portfolio() {
             team: "solo",
             scope: "front-end",
             starterCode: false,
-            defaultPosition: 10
+            defaultPosition: 50
         },
         {
             id: 9,
@@ -141,7 +141,7 @@ export default function Portfolio() {
             team: "solo",
             scope: "front-end",
             starterCode: true,
-            defaultPosition: 11
+            defaultPosition: 55
         },
         {
             id: 10,
@@ -156,7 +156,7 @@ export default function Portfolio() {
             team: "group",
             scope: "front-end",
             starterCode: false,
-            defaultPosition: 12
+            defaultPosition: 60
         },
         {
             id: 11,
@@ -171,7 +171,7 @@ export default function Portfolio() {
             team: "solo",
             scope: "front-end",
             starterCode: true,
-            defaultPosition: 13
+            defaultPosition: 65
         },
         {
             id: 12,
@@ -187,7 +187,7 @@ export default function Portfolio() {
             scope: "full-stack",
             skills: ["progressive web apps"],
             starterCode: true,
-            defaultPosition: 2
+            defaultPosition: 10
         },
         {
             id: 13,
@@ -202,7 +202,37 @@ export default function Portfolio() {
             team: "solo",
             scope: "back-end",
             starterCode: false,
-            defaultPosition: 5
+            defaultPosition: 25
+        },
+        {
+            id: 14,
+            name: "Support Hero",
+            dateCreated: "03/29/2023",
+            imageSource: "./images/supportHero.jpg",
+            imgAlt: "Screenshot showing Ticket Details",
+            deployedLink: "https://dry-fjord-88699.herokuapp.com/",
+            githubLink: "https://github.com/rmoscoe/support-hero",
+            description: "Support Hero is a customer support ticketing system. Customers are able to sign up, create tickets, and correspond with agents on a given issue. Agents are able to correspond with customers as well as create notes on given comments. Users can also toggle dark mode to change the color of the platform to a darker theme.",
+            techStack: ["CSS", "JavaScript", "Node.js", "Bulma", "React", "graphQL", "Express.js", "MongoDB", "Mongoose", "Heroku"],
+            team: "group",
+            scope: "full-stack",
+            starterCode: false,
+            defaultPosition: 1
+        },
+        {
+            id: 15,
+            name: "Tech Blog",
+            dateCreated: "03/14/2023",
+            imageSource: "./images/post.png",
+            imgAlt: "Screenshot showing the Post Details page with reactions",
+            deployedLink: "https://aqueous-citadel-97448.herokuapp.com/",
+            githubLink: "https://github.com/rmoscoe/tech-blog",
+            description: "This full-stack application offers a simplified blog service. It includes user registration and authentication functionality and allows users to create blog posts and comment on any user's posts. Users can also edit or delete their own blog posts and comments. To accomplish this, the application renders views using Express-Handlebars, relies on Express for routing, and stores data in a MySQL database.",
+            techStack: ["JavaScript", "Node.js", "Express.js", "Express-Handlebars", "MySQL", "Sequelize", "Heroku"],
+            team: "solo",
+            scope: "full-stack",
+            starterCode: false,
+            defaultPosition: 7
         }
     ]);
     const [technologies, setTechnologies] = useState([]);

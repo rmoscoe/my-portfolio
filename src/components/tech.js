@@ -19,7 +19,9 @@ export default function Tech(props) {
         Heroku: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg",
         Webpack: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
         MongoDB: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-        GitHub: "ttps://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+        GitHub: "ttps://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        React: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        graphQL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
     };
 
     return props.technologies.map((tech, i) => (

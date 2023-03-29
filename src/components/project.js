@@ -8,7 +8,7 @@ export default function Project(props) {
             <div className="project-background">
                 <h3 className="is-hidden-mobile">{project.name}</h3>
                 <div className="columns">
-                    <div className="image-container column is-half hoverable">
+                    <div className="image-container column is-three-fifths hoverable">
                         <img className="project-image" src={project.imageSource} alt={project.imgAlt} />
                         <div className="container is-overlay is-hidden-tablet is-align-self-flex-end has-background-transparent">
                             <h3 className="is-hidden has-background-transparent show-on-hover mobile-project-name">{project.name}</h3>
