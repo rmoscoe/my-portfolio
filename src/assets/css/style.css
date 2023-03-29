@@ -94,7 +94,7 @@ p {
 }
 
 h3 {
-    font-size:140% !important;
+    font-size:140%;
     font-style:italic !important;
     line-height:1.5 !important;
     padding-left:25px !important;
@@ -107,7 +107,7 @@ h3 {
     /* border-radius:2px !important; */
     /* transform:translateY(25%) !important; */
     /* border-bottom:3px solid var(--other-accent-color) !important; */
-    z-index:2 !important;
+    z-index:200 !important;
     /* position:relative !important; */
 }
 

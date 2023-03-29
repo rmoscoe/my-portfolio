@@ -10,28 +10,37 @@
 .project {
     /* flex:0 1 calc(25% - 1.5em) !important; */
     /* border:2px solid var(--main-accent-color) !important; */
-    margin:1em !important;
+    padding:5vw !important;
     /* margin-right:1em !important; */
-    overflow:hidden !important;
+    /* overflow:hidden !important; */
 }
+
+/* .project-background {
+    background-color:rgba(255,255,255,0.05);
+} */
 
 /* .featured-project h3 {
     background-color:var(--light-color) !important;
 } */
+
+.mobile-project-name {
+    color:var(--medium-color);
+    font-size:1.5rem!important;
+}
 
 .featured-project a, .project a {
     z-index:1 !important;
 }
 
 .image-container {
-    background-color: var(--main-accent-color) !important;
+    /* background-color: var(--main-accent-color) !important; */
     font-size:0 !important;
     line-height:0 !important;
     position:relative !important;
 }
 
-.mobile-project-card-body {
-    display: none;
+.project-image {
+    background-color:var(--main-accent-color);
 }
 
 /* Creting an overlay for the description and tech stack for each project that overlaps the image. */
@@ -44,14 +53,20 @@
     z-index:2 !important;
 }
 
+.block {
+    display: block;
+}
+
 /* .featured-project .details {
     margin-top:-13% !important;
 } */
 
 .description-mobile {
-    font-size:smaller !important;
+    /* font-size:smaller !important; */
     padding: 1em, !important;
     text-align:left !important;
+    color:var(--medium-color);
+    line-height:1!important;
 }
 
 .description {
@@ -59,9 +74,12 @@
     font-size:smaller !important;
     /* padding:1em !important; */
     color:var(--light-color) !important;
-    text-align:right !important;
-    width:110%;
-    transform:translateX(10%);
+    width:120%;
+    transform:translateX(-20%);
+}
+
+.description p {
+     text-align:right !important;
 }
 
 /* .featured-project .description {
@@ -73,9 +91,22 @@
     list-style:none !important;
     display:flex !important;
     flex-wrap:nowrap !important;
-    justify-content:flex-end !important;
+    justify-content:flex-end;
     gap:10px !important;
     padding-bottom:3px !important;
+}
+
+.project-links-mobile {
+    list-style:none !important;
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    justify-content:center;
+    gap:10px !important;
+    padding-bottom:3px !important;
+}
+
+.mobile {
+    font-size:18px !important;
 }
 
 .project-link {
