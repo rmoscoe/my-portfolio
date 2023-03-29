@@ -7,6 +7,8 @@ import Resume from "./resume";
 export default function PortfolioContainer({ currentPage }) {
     const renderPage = () => {
         switch (currentPage) {
+            case "Home":
+                return <About />;
             case 'About':
                 return <About />;
             case 'Portfolio':

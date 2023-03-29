@@ -7,7 +7,7 @@ import "./assets/css/bulma.min.css";
 import "./assets/css/style.css"
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState('Home');
 
   const handlePageChange = (page) => setCurrentPage(page);
 
@@ -16,14 +16,14 @@ function App() {
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <main>
         <div className="is-hidden-tablet is-relative is-flex is-justify-content-center my-3">
-          <div className="w70">
+          <div className="w65">
             <div className="image-container">
               <img className="headshot" src="./images/Headshot_rectangular.jpg"
                 alt="professional headshot" />
             </div>
             <div className="container is-overlay is-align-self-center has-background-transparent">
-              <h1 className="has-background-transparent shadow">Ryan Moscoe</h1>
-              <p className="headline-mobile has-background-transparent shadow">Software Engineer | Problem Solver | Ninja</p>
+              <h1 className="has-background-transparent shadow is-size-2">Ryan Moscoe</h1>
+              <p className="headline-mobile has-background-transparent shadow is-size-4">Software Engineer | Problem Solver | Ninja</p>
             </div>
           </div>
         </div>

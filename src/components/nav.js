@@ -10,7 +10,7 @@ export default function Nav({ currentPage, handlePageChange }) {
                     href="#about"
                     // href="/"
                     onClick={() => handlePageChange("About")}
-                    className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                    className={currentPage === 'About' || currentPage === "Home" ? 'nav-link active' : 'nav-link'}
                 >
                     About Me
                 </a>

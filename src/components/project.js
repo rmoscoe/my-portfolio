@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Tech from "./tech";
 import "../assets/css/project.css";
 
 export default function Project(props) {
     return props.projects.map((project, i) => (
-        <section className="project column is-half-desktop" key={`project-${i}`}>
+        <section className="project column is-half-desktop" key={`project-${project.id}`}>
             <h3 className="is-hidden-mobile">{project.name}</h3>
             <div className="columns">
                 <div className="image-container column is-half hoverable">

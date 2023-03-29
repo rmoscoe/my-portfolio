@@ -17,7 +17,7 @@ export default function Portfolio() {
             description: "Bullet Journal allows users to organize their thoughts and feelings by creating an unlimited number of journals, which can each contain an unlimited number of entries.",
             techStack: ["CSS", "JavaScript", "Node.js", "MySQL", "Sequelize", "Express.js", "Express-Handlebars", "Bulma", "Heroku"],
             team: "group",
-            scope: "fullStack",
+            scope: "full-stack",
             starterCode: false,
             defaultPosition: 1
         },
@@ -32,7 +32,7 @@ export default function Portfolio() {
             description: "This command line application interacts with a MySQL database, representing a sliver of an HRIS. The user can select various actions, including viewing a table with departments, roles, or employees; adding a department, role, or employee; updating an existing employee's role; or exiting the system.",
             techStack: ["JavaScript", "Node.js", "MySQL"],
             team: "solo",
-            scope: "backEnd",
+            scope: "back-end",
             starterCode: false,
             defaultPosition: 3
         },
@@ -47,7 +47,7 @@ export default function Portfolio() {
             description: "This command line application prompts the user to enter pertinent details about a team manager and as many additional team members as desired. Then the application dynamically generates an HTML file to display the details for each team member. In addition, this project incorporates unit testing using Jest.",
             techStack: ["HTML", "Bootstrap", "JavaScript", "Node.js", "Jest"],
             team: "solo",
-            scope: "backEnd",
+            scope: "back-end",
             skills: ["unit testing"],
             starterCode: false,
             defaultPosition: 4
@@ -63,7 +63,7 @@ export default function Portfolio() {
             description: "This app allows a user to save notes in an online repository so they can be retrieved, viewed, and deleted from anywhere. For this project, the front end was provided as starter code and did not require refactoring. The back end had to be created from scratch.",
             techStack: ["JavaScript", "Node.js", "Express.js", "Heroku"],
             team: "solo",
-            scope: "backEnd",
+            scope: "back-end",
             starterCode: true,
             defaultPosition: 6
         },
@@ -78,7 +78,7 @@ export default function Portfolio() {
             description: "This quiz presents the user with ten questions about JavaScript in a random order. The quiz has a time limit of 10 minutes, and the user's score is the number of seconds remaining when all questions are answered or time runs out.",
             techStack: ["HTML", "CSS", "JavaScript"],
             team: "solo",
-            scope: "frontEnd",
+            scope: "front-end",
             starterCode: false,
             defaultPosition: 7
         },
@@ -93,7 +93,7 @@ export default function Portfolio() {
             description: "A simulation in the style of a tabletop roleplaying game based on a laser tag arena where I used to work. It programmatically generates a human character and an alien character and then simulates combat between them, describing the results through Standard Output.",
             techStack: ["Java", "JUnit"],
             team: "solo",
-            scope: "backEnd",
+            scope: "back-end",
             skills: ["unit testing"],
             starterCode: false,
             defaultPosition: 8
@@ -109,7 +109,7 @@ export default function Portfolio() {
             description: "View current weather conditions and a 5Day forecast for a city by searching or retrieving a saved search.",
             techStack: ["HTML", "JavaScript", "jQuery", "Bootstrap", "Day.js"],
             team: "solo",
-            scope: "frontEnd",
+            scope: "front-end",
             starterCode: false,
             defaultPosition: 9
         },
@@ -124,7 +124,7 @@ export default function Portfolio() {
             description: "A Shakespearean insult generator that assembles three randomly selected components to form an insult at the push of a button.",
             techStack: ["HTML", "CSS", "JavaScript"],
             team: "solo",
-            scope: "frontEnd",
+            scope: "front-end",
             starterCode: false,
             defaultPosition: 10
         },
@@ -139,7 +139,7 @@ export default function Portfolio() {
             description: "Horiseon, a fictitious marketing agency, requested a refactoring of its website to improve accessibility. This project included several improvements to the existing code.",
             techStack: ["HTML", "CSS"],
             team: "solo",
-            scope: "frontEnd",
+            scope: "front-end",
             starterCode: true,
             defaultPosition: 11
         },
@@ -154,7 +154,7 @@ export default function Portfolio() {
             description: "View information from Google Books and save favorites with this app.",
             techStack: ["HTML", "CSS", "JavaScript", "Bulma", "UmbrellaJS"],
             team: "group",
-            scope: "frontEnd",
+            scope: "front-end",
             starterCode: false,
             defaultPosition: 12
         },
@@ -169,7 +169,7 @@ export default function Portfolio() {
             description: "This app randomly generates a password according to criteria the user specifies.",
             techStack: ["JavaScript"],
             team: "solo",
-            scope: "frontEnd",
+            scope: "front-end",
             starterCode: true,
             defaultPosition: 13
         },
@@ -184,7 +184,7 @@ export default function Portfolio() {
             description: "This progressive web app (PWA) loads a basic text editor in a browser. The editor automatically saves text entered by the user in a clientSide database using IndexedDB and retrieves the user's saved text on load. In addition, the user can install the editor as an app for offline use.",
             techStack: ["JavaScript", "Node.js", "Webpack", "IndexedDB", "Concurrently", "Heroku"],
             team: "solo",
-            scope: "fullStack",
+            scope: "full-stack",
             skills: ["progressive web apps"],
             starterCode: true,
             defaultPosition: 2
@@ -200,29 +200,52 @@ export default function Portfolio() {
             description: "This project consists of a MongoDB database and routes to create, read, update, and delete data from the database. The database includes models for users and thoughts, with the thought model containing a subdocument for reactions. Users have a friends list, facilitating relationships with other users. In addition, thoughts and reactions reference users as owners, and users have a list of thoughts.",
             techStack: ["JavaScript", "Node.js", "MongoDB", "Mongoose", "Express.js"],
             team: "solo",
-            scope: "backEnd",
+            scope: "back-end",
             starterCode: false,
             defaultPosition: 5
         }
     ]);
-    const [tech, setTech] = useState();
+    const [technologies, setTechnologies] = useState([]);
+    
+    useEffect(() => {
+        const techList = [];
+        projects.forEach((project) => {
+            for (let i = 0; i < project.techStack.length; i++) {
+                if (techList.indexOf(project.techStack[i]) === -1) {
+                    techList.push(project.techStack[i]);
+                }
+            }
+        });
+        techList.sort((a, b) => {
+            if (a < b) {
+                return -1;
+            }
+            if (a > b) {
+                return 1;
+            }
+            return 0;
+        });
+        setTechnologies(techList);
+    }, [projects]);
+
+    const [tech, setTech] = useState([]);
     const [team, setTeam] = useState("");
-    const [scope, setScope] = useState();
+    const [scope, setScope] = useState([]);
     const [starter, setStarter] = useState(null);
     const [sort, setSort] = useState("default");
-    const [technologies, setTechnologies] = useState([]);
+    
     const [teamOptions, setTeamOptions] = useState(["solo", "group"]);
     const [scopeOptions, setScopeOptions] = useState(["back-end", "front-end", "full-stack"]);
     const [starterOptions, setStarterOptions] = useState(["Provided", "Not Provided"]);
     const [sortOptions, setSortOptions] = useState(["Default", "A-Z", "Z-A", "Recent"]);
-    const [transformedProjects, setTransformedProjects] = useState([]);
+    const [transformedProjects, setTransformedProjects] = useState(projects);
 
     const filterProjects = useCallback((projectArr) => {
         let filteredArr = projectArr;
-        if (tech) {
+        if (tech.length > 0) {
             const techArr = filteredArr.filter((project) => {
                 for (let i = 0; i < tech.length; i++) {
-                    if (project.techStack.includes(tech[i])) {
+                    if (project.techStack.indexOf(tech[i]) !== -1) {
                         return true;
                     }
                 }
@@ -236,7 +259,7 @@ export default function Portfolio() {
             });
             filteredArr = teamArr;
         }
-        if (scope) {
+        if (scope.length > 0) {
             const scopeArr = filteredArr.filter((project) => {
                 for (let i = 0; i < scope.length; i++) {
                     if (project.scope === scope[i]) {
@@ -247,7 +270,7 @@ export default function Portfolio() {
             });
             filteredArr = scopeArr;
         }
-        if (starter) {
+        if (starter !== null) {
             const starterArr = filteredArr.filter((project) => {
                 return project.starterCode === starter;
             });
@@ -303,30 +326,8 @@ export default function Portfolio() {
         }
     }
 
-    useEffect(() => {
-        const techList = [];
-        projects.forEach((project) => {
-            for (let i = 0; i < project.techStack.length; i++) {
-                if (techList.indexOf(project.techStack[i]) === -1) {
-                    techList.push(project.techStack[i]);
-                }
-            }
-        });
-        techList.sort((a, b) => {
-            if (a < b) {
-                return -1;
-            }
-            if (a > b) {
-                return 1;
-            }
-            return 0;
-        });
-        setTechnologies(techList);
-    }, [projects]);
-
 
     function handleTechChange(event) {
-        event.preventDefault();
         if (event.target.checked) {
             setTech([...tech, event.target.value]);
         }
@@ -336,32 +337,50 @@ export default function Portfolio() {
         }
     }
 
-    function clearTech(event) {
-        event.preventDefault();
+    function clearTech() {
         setTech([]);
+        const techCheckboxes = document.querySelectorAll("#tech-dropdown-menu .dropdown-content .dropdown-item .checkbox input");
+        techCheckboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                checkbox.checked = false;
+            }
+        });
+        document.getElementById("tech-filter").classList.toggle("is-active");
     }
 
     function handleTeamChange(event) {
-        setTeam(event.target.textContent);
+        setTeam(event.target.textContent.toLowerCase());
+        document.getElementById("team-filter").classList.toggle("is-active");
     }
 
-    function clearTeam(event) {
+    function clearTeam() {
         setTeam("");
+        document.getElementById("team-filter").classList.toggle("is-active");
     }
 
     function handleScopeChange(event) {
-        event.preventDefault();
         if (event.target.checked) {
             setScope([...scope, event.target.value]);
         } else {
-            const idx = scope.indexOf(event.target.value);
-            setScope(scope.slice(idx, idx + 1));
+            const newScope = [];
+            scope.forEach(el => {
+                if (el !== event.target.value) {
+                    newScope.push(el);
+                }
+            });
+            setScope(newScope);
         }
     }
 
-    function clearScope(event) {
-        event.preventDefault();
+    function clearScope() {
         setScope([]);
+        const scopeCheckboxes = document.querySelectorAll("#scope-dropdown-menu .dropdown-content .dropdown-item .checkbox input");
+        scopeCheckboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                checkbox.checked = false;
+            }
+        });
+        document.getElementById("scope-filter").classList.toggle("is-active");
     }
 
     function handleStarterChange(event) {
@@ -371,25 +390,28 @@ export default function Portfolio() {
         if (event.target.textContent === "Not Provided") {
             setStarter(false);
         }
+        document.getElementById("starter-filter").classList.toggle("is-active");
     }
 
-    function clearStarter(event) {
+    function clearStarter() {
         setStarter(null);
+        document.getElementById("starter-filter").classList.toggle("is-active");
     }
 
     function handleSortChange(event) {
         setSort(event.target.textContent);
+        document.getElementById("sort").classList.toggle("is-active");
     }
 
     useEffect(() => {
         const filteredProjects = filterProjects(projects);
         const sortedProjects = sortProjects(filteredProjects, sort);
-        setTransformedProjects(sortedProjects);
-    }, [projects, sort]);
+        setTransformedProjects([...sortedProjects]);
+    }, [projects, sort, tech, team, starter, scope]);
 
     const dropdowns = document.querySelectorAll(".dropdown");
 
-    function toggleDropdown (menu) {
+    function toggleDropdown(menu) {
         document.getElementById(menu).classList.toggle("is-active");
         dropdowns.forEach(dropdown => {
             if (dropdown.getAttribute("id") !== menu && dropdown.classList.contains("is-active")) {
@@ -405,7 +427,7 @@ export default function Portfolio() {
                 <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
                     <div className="dropdown" id="tech-filter">
                         <div className="dropdown-trigger">
-                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="tech-dropdown-menu" onClick={() => {toggleDropdown("tech-filter")}}>
+                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="tech-dropdown-menu" onClick={() => { toggleDropdown("tech-filter") }}>
                                 <span className="is-hidden-touch">Technologies</span>
                                 <span className="is-hidden-desktop">Tech</span>
                                 <span className="icon is-small">
@@ -424,7 +446,7 @@ export default function Portfolio() {
                 <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
                     <div className="dropdown" id="team-filter">
                         <div className="dropdown-trigger">
-                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="team-dropdown-menu" onClick={() => {toggleDropdown("team-filter")}}>
+                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="team-dropdown-menu" onClick={() => { toggleDropdown("team-filter") }}>
                                 <span>Team</span>
                                 <span className="icon is-small">
                                     <i className="fas fa-angle-down" aria-hidden="true"></i>
@@ -442,7 +464,7 @@ export default function Portfolio() {
                 <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
                     <div className="dropdown" id="scope-filter">
                         <div className="dropdown-trigger">
-                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="scope-dropdown-menu" onClick={() => {toggleDropdown("scope-filter")}}>
+                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="scope-dropdown-menu" onClick={() => { toggleDropdown("scope-filter") }}>
                                 <span>Scope</span>
                                 <span className="icon is-small">
                                     <i className="fas fa-angle-down" aria-hidden="true"></i>
@@ -460,7 +482,7 @@ export default function Portfolio() {
                 <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
                     <div className="dropdown" id="starter-filter">
                         <div className="dropdown-trigger">
-                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="starter-dropdown-menu" onClick={() => {toggleDropdown("starter-filter")}}>
+                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="starter-dropdown-menu" onClick={() => { toggleDropdown("starter-filter") }}>
                                 <span className="is-hidden-touch">Starter Code</span>
                                 <span className="is-hidden-desktop">Starter</span>
                                 <span className="icon is-small">
@@ -479,7 +501,7 @@ export default function Portfolio() {
                 <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
                     <div className="dropdown" id="sort">
                         <div className="dropdown-trigger">
-                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="sort-dropdown-menu" onClick={() => {toggleDropdown("sort")}}>
+                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="sort-dropdown-menu" onClick={() => { toggleDropdown("sort") }}>
                                 <span>Sort</span>
                                 <span className="icon is-small">
                                     <i className="fas fa-angle-down" aria-hidden="true"></i>
