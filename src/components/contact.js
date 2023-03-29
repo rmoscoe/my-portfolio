@@ -1,5 +1,6 @@
 import React, { useState, } from "react";
 import { validateEmail } from '../utils/helpers';
+import "../assets/css/contact.css";
 
 export default function Contact() {
     const [email, setEmail] = useState('');
@@ -148,59 +149,61 @@ export default function Contact() {
     return (
         <section className="link-to">
             <h2>Contact</h2>
-            <form className="form" onSubmit={handleFormSubmit}>
-                <div className="field">
-                    <label className="label">Email</label>
-                    <div className="control">
-                        <input
-                            className="input"
-                            value={email}
-                            name="email"
-                            onChange={handleInputChange}
-                            type="text"
-                            placeholder="Email"
-                            onBlur={handleEmailLoseFocus}
-                        />
+            <div className="container">
+                <form className="form" id="contact-form" onSubmit={handleFormSubmit}>
+                    <div className="field">
+                        <label className="label">Email</label>
+                        <div className="control contact-input">
+                            <input
+                                className="input"
+                                value={email}
+                                name="email"
+                                onChange={handleInputChange}
+                                type="text"
+                                placeholder="Email"
+                                onBlur={handleEmailLoseFocus}
+                            />
+                        </div>
+                        {/* <p className="help is-danger">{notification}</p> */}
                     </div>
-                    {/* <p className="help is-danger">{notification}</p> */}
-                </div>
-                <div className="field">
-                    <label className="label">Name</label>
-                    <div className="control">
-                        <input
-                            className="input"
-                            value={contactName}
-                            name="contactName"
-                            onChange={handleInputChange}
-                            type="text"
-                            placeholder="Name"
-                            onBlur={handleNameLoseFocus}
-                        />
+                    <div className="field">
+                        <label className="label">Name</label>
+                        <div className="control contact-input">
+                            <input
+                                className="input"
+                                value={contactName}
+                                name="contactName"
+                                onChange={handleInputChange}
+                                type="text"
+                                placeholder="Name"
+                                onBlur={handleNameLoseFocus}
+                            />
+                        </div>
+                        {/* <p className="help is-danger">{notification}</p> */}
                     </div>
-                    {/* <p className="help is-danger">{notification}</p> */}
-                </div>
-                <div className="field w-100">
-                    <label className="label">Message</label>
-                    <textarea
-                        value={message}
-                        name="message"
-                        onChange={handleInputChange}
-                        type="textarea"
-                        placeholder="Message"
-                        onBlur={handleMessageLoseFocus}
-                        rows="5"
-                    />
-                    {/* <p className="help is-danger">{notification}</p> */}
-                </div>
-                <div className="control">
-                    <input type="submit" />
-                </div>
-            </form>
-            {notification && (
-                <div>
-                    <p className="error-text">{notification}</p>
-                </div>
-            )}
+                    <div className="field w-100">
+                        <label className="label">Message</label>
+                        <textarea
+                            value={message}
+                            name="message"
+                            onChange={handleInputChange}
+                            type="textarea"
+                            placeholder="Message"
+                            onBlur={handleMessageLoseFocus}
+                            rows="5"
+                        />
+                        {/* <p className="help is-danger">{notification}</p> */}
+                    </div>
+                    <div className="control">
+                        <input type="submit" />
+                    </div>
+                </form>
+                {notification && (
+                    <div>
+                        <p className="error-text">{notification}</p>
+                    </div>
+                )}
+            </div>
         </section>
     )
 }

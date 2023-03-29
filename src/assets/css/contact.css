@@ -1,6 +1,18 @@
+#contact-form {
+    max-width:120ch;
+}
+
 .label {
     color:var(--medium-color) !important;
 }
+
+/* .field {
+    max-width:255ch;
+}
+
+.contact-input {
+    max-width: 80ch!important;
+} */
 
 textarea {
     width:100% !important;
