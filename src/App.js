@@ -21,8 +21,8 @@ function App() {
               alt="professional headshot" />
           </div>
           <div className="container is-overlay is-align-self-center has-background-transparent">
-            <h1 className="has-background-transparent">Ryan Moscoe</h1>
-            <p className="headline-mobile has-background-transparent">Software Engineer | Problem Solver | Ninja</p>
+            <h1 className="has-background-transparent shadow">Ryan Moscoe</h1>
+            <p className="headline-mobile has-background-transparent shadow">Software Engineer | Problem Solver | Ninja</p>
           </div>
         </div>
         <section id="hero" className="is-hidden-mobile">

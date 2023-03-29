@@ -220,7 +220,6 @@ export default function Portfolio() {
     const filterProjects = useCallback((projectArr) => {
         let filteredArr = projectArr;
         if (tech) {
-            console.log()
             const techArr = filteredArr.filter((project) => {
                 for (let i = 0; i < tech.length; i++) {
                     if (project.techStack.includes(tech[i])) {
@@ -386,16 +385,27 @@ export default function Portfolio() {
         const filteredProjects = filterProjects(projects);
         const sortedProjects = sortProjects(filteredProjects, sort);
         setTransformedProjects(sortedProjects);
-      }, [projects, sort]);
+    }, [projects, sort]);
+
+    const dropdowns = document.querySelectorAll(".dropdown");
+
+    function toggleDropdown (menu) {
+        document.getElementById(menu).classList.toggle("is-active");
+        dropdowns.forEach(dropdown => {
+            if (dropdown.getAttribute("id") !== menu && dropdown.classList.contains("is-active")) {
+                dropdown.classList.toggle("is-active");
+            }
+        })
+    }
 
     return (
         <section className="link-to">
             <h2>Portfolio</h2>
             <div id="controls" className="columns is-mobile">
                 <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
-                    <div className="dropdown is-active">
+                    <div className="dropdown" id="tech-filter">
                         <div className="dropdown-trigger">
-                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="tech-dropdown-menu" onClick={() => {toggleDropdown("tech-filter")}}>
                                 <span className="is-hidden-touch">Technologies</span>
                                 <span className="is-hidden-desktop">Tech</span>
                                 <span className="icon is-small">
@@ -412,9 +422,9 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
-                    <div className="dropdown is-active">
+                    <div className="dropdown" id="team-filter">
                         <div className="dropdown-trigger">
-                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="team-dropdown-menu" onClick={() => {toggleDropdown("team-filter")}}>
                                 <span>Team</span>
                                 <span className="icon is-small">
                                     <i className="fas fa-angle-down" aria-hidden="true"></i>
@@ -430,9 +440,9 @@ export default function Portfolio() {
                     </div>
                 </div>
                 <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
-                    <div className="dropdown is-active">
+                    <div className="dropdown" id="scope-filter">
                         <div className="dropdown-trigger">
-                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="scope-dropdown-menu" onClick={() => {toggleDropdown("scope-filter")}}>
                                 <span>Scope</span>
                                 <span className="icon is-small">
                                     <i className="fas fa-angle-down" aria-hidden="true"></i>
@@ -447,39 +457,39 @@ export default function Portfolio() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
-                <div className="dropdown is-active">
-                    <div className="dropdown-trigger">
-                        <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="dropdown-menu">
-                            <span className="is-hidden-touch">Starter Code</span>
-                            <span className="is-hidden-desktop">Starter</span>
-                            <span className="icon is-small">
-                                <i className="fas fa-angle-down" aria-hidden="true"></i>
-                            </span>
-                        </button>
-                    </div>
-                    <div className="dropdown-menu" id="team-dropdown-menu" role="menu">
-                        <div className="dropdown-content">
-                            <button className="button is-small is-responsive is-outlined" onClick={clearStarter}>Clear</button>
-                            <MenuChoice options={starterOptions} handleMenuClick={handleStarterChange} />
+                <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
+                    <div className="dropdown" id="starter-filter">
+                        <div className="dropdown-trigger">
+                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="starter-dropdown-menu" onClick={() => {toggleDropdown("starter-filter")}}>
+                                <span className="is-hidden-touch">Starter Code</span>
+                                <span className="is-hidden-desktop">Starter</span>
+                                <span className="icon is-small">
+                                    <i className="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div className="dropdown-menu" id="starter-dropdown-menu" role="menu">
+                            <div className="dropdown-content">
+                                <button className="button is-small is-responsive is-outlined" onClick={clearStarter}>Clear</button>
+                                <MenuChoice options={starterOptions} handleMenuClick={handleStarterChange} />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
-                <div className="dropdown is-active">
-                    <div className="dropdown-trigger">
-                        <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="dropdown-menu">
-                            <span>Sort</span>
-                            <span className="icon is-small">
-                                <i className="fas fa-angle-down" aria-hidden="true"></i>
-                            </span>
-                        </button>
-                    </div>
-                    <div className="dropdown-menu" id="team-dropdown-menu" role="menu">
-                        <div className="dropdown-content">
-                            <MenuChoice options={sortOptions} handleMenuClick={handleSortChange} />
+                <div className="column is-one-third-mobile is-one-quarter-tablet is-one-fifth-desktop">
+                    <div className="dropdown" id="sort">
+                        <div className="dropdown-trigger">
+                            <button className="button is-small is-responsive is-outlined port-control" aria-haspopup="true" aria-controls="sort-dropdown-menu" onClick={() => {toggleDropdown("sort")}}>
+                                <span>Sort</span>
+                                <span className="icon is-small">
+                                    <i className="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </div>
+                        <div className="dropdown-menu" id="sort-dropdown-menu" role="menu">
+                            <div className="dropdown-content">
+                                <MenuChoice options={sortOptions} handleMenuClick={handleSortChange} />
+                            </div>
                         </div>
                     </div>
                 </div>

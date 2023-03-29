@@ -114,10 +114,15 @@ h3 {
     top: 50%;
     left: 50%;
     transform:translate(-50%);
+    transform:translateY(-50%);
 }
 
 .has-background-transparent {
     background-color: transparent !important;
+}
+
+.shadow {
+    text-shadow: 1px 1px 2px black;
 }
 
 /* Styling the various states for the links on the page. */
