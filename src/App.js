@@ -15,14 +15,16 @@ function App() {
     <>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <main>
-        <div className="is-hidden-tablet is-relative">
-          <div className="image-container">
-            <img className="headshot" src="./images/Headshot_rectangular.jpg"
-              alt="professional headshot" />
-          </div>
-          <div className="container is-overlay is-align-self-center has-background-transparent">
-            <h1 className="has-background-transparent shadow">Ryan Moscoe</h1>
-            <p className="headline-mobile has-background-transparent shadow">Software Engineer | Problem Solver | Ninja</p>
+        <div className="is-hidden-tablet is-relative is-flex is-justify-content-center my-3">
+          <div className="w70">
+            <div className="image-container">
+              <img className="headshot" src="./images/Headshot_rectangular.jpg"
+                alt="professional headshot" />
+            </div>
+            <div className="container is-overlay is-align-self-center has-background-transparent">
+              <h1 className="has-background-transparent shadow">Ryan Moscoe</h1>
+              <p className="headline-mobile has-background-transparent shadow">Software Engineer | Problem Solver | Ninja</p>
+            </div>
           </div>
         </div>
         <section id="hero" className="is-hidden-mobile">

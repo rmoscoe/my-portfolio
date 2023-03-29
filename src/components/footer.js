@@ -11,25 +11,25 @@ export default function Footer() {
                         <span className="contact-icon mr-2 is-size-6-touch">
                             <i className="fa-solid fa-envelope is-size-6-touch"></i>
                         </span>
-                        <span className="is-size-6-touch">ryanmoscoe@gmail.com</span>
+                        <span className="is-size-6-touch is-hidden-mobile">ryanmoscoe@gmail.com</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/ryan-moscoe-8652973/" target="_blank" rel="noreferrer">
                         <i className="fa-brands fa-linkedin is-size-6-touch"></i>
-                        <span className="ml-2 is-size-6-touch">LinkedIn</span>
+                        <span className="ml-2 is-size-6-touch is-hidden-mobile">LinkedIn</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/rmoscoe" target="_blank" rel="noreferrer">
                         <i className="fa-brands fa-github is-size-6-touch"></i>
-                        <span className="ml-2 is-size-6-touch">GitHub</span>
+                        <span className="ml-2 is-size-6-touch is-hidden-mobile">GitHub</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://medium.com/@ryanmoscoe" target="_blank" rel="noreferrer">
                         <i className="fa-brands fa-medium is-size-6-touch"></i>
-                        <span className="ml-2 is-size-6-touch">Medium</span>
+                        <span className="ml-2 is-size-6-touch is-hidden-mobile">Medium</span>
                     </a>
                 </li>
             </ul>
