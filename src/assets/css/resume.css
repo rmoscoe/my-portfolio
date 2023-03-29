@@ -1,5 +1,6 @@
 .experience {
     background-color:var(--background-accent) !important;
+    /* visibility:hidden; */
 }
 
 .emphasis {

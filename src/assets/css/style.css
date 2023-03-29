@@ -25,6 +25,43 @@ body {
     line-height:1.4 !important;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* visibility: hidden; */
+        transform:translateY(7%);
+    }
+    to {
+        opacity: 1;
+        /* visibility:visible; */
+        transform:none;
+    }
+}
+
+/* @keyframes fadeOut {
+    from {visibility: visible}
+    to {visibility: hidden}
+} */
+
+.fade-in {
+    animation-duration: 0.75s;
+    animation-name: fadeIn;
+    animation-fill-mode:forwards;
+    visibility: visible;
+}
+
+.fade-out {
+    /* animation-delay:0s, 0.75s; */
+    animation-duration: 0.75s;
+    animation-name: fadeIn;
+    /* animation-fill-mode:backwards; */
+    animation-direction:reverse;
+    /* visibility: hidden; */
+    /* transform:translateY(7%);
+    opacity:0;
+    transition: visibility 0s 0.75s, opacity 0.75s, transform 0.75s; */
+}
+
 /* Because the nav bar is fixed, each section needs extra padding at the top so the heading doesn't get covered by the nav bar. */
 .link-to {
     padding:3% 25px 3% 25px !important;

@@ -1,10 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef } from "react";
 import Tech from "./tech";
 import "../assets/css/project.css";
 
 export default function Project(props) {
+    const ref = useRef(null);
+
+    const animationOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.25,
+    };
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.intersectionRatio >= 0.25) {
+                entry.target.classList.add("fade-in");
+            }
+            if (entry.intersectionRatio < 0.25 && entry.target.classList.contains("fade-in")) {
+                entry.target.classList.remove("fade-in");
+                entry.target.classList.add("fade-out");
+            }
+            if (!entry.target.isVisible) {
+                entry.target.classList.remove("fade-out");
+            }
+        });
+    }, animationOptions);
+
+    let targets = document.querySelectorAll(".project");
+
+    if (targets.length > 0) {
+        targets.forEach((target) => {
+            observer.observe(target);
+        });
+    }
+
     return props.projects.map((project, i) => (
-        <section className="project column is-half" key={`project-${project.id}`}>
+        <section ref={ref} className="project column is-half" key={`project-${project.id}`}>
             <div className="project-background">
                 <h3 className="is-hidden-mobile">{project.name}</h3>
                 <div className="columns">

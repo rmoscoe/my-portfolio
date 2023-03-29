@@ -13,6 +13,7 @@
     padding:5vw !important;
     /* margin-right:1em !important; */
     /* overflow:hidden !important; */
+    visibility:hidden;
 }
 
 /* .project-background {

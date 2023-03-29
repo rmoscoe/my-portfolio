@@ -1,8 +1,43 @@
-import React from "react";
+import React, { useRef, useCallback, useEffect } from "react";
 import Skill from "./skill";
 import "../assets/css/resume.css";
 
 export default function Resume() {
+    // const ref = useRef(null);
+
+    const animationOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.25,
+    };
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.intersectionRatio >= 0.25) {
+                entry.target.classList.add("fade-in");
+            }
+            if (entry.intersectionRatio < 0.25 && entry.target.classList.contains("fade-in")) {
+                entry.target.classList.remove("fade-in");
+                entry.target.classList.add("fade-out");
+            }
+            if (!entry.target.isVisible) {
+                entry.target.classList.remove("fade-out");
+            }
+        });
+    }, animationOptions);
+
+    const assignTargets = useCallback(() => {
+        let targets = document.querySelectorAll(".experience");
+
+        if (targets.length > 0) {
+            targets.forEach((target) => {
+                observer.observe(target);
+            });
+        }
+    }, []);
+
+    useEffect(() => {assignTargets()});
+
     function downloadResume() {
         fetch("Ryan Moscoe Resume.docx")
             .then(response => {
