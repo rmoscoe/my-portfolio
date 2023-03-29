@@ -349,6 +349,13 @@ export default function Portfolio() {
     }
 
     function handleTeamChange(event) {
+        event.target.classList.add("is-active");
+        const teamChoices = document.querySelectorAll("#team-dropdown-menu .dropdown-content .dropdown-item");
+        teamChoices.forEach(choice => {
+            if (choice.classList.contains("is-active") && choice.textContent !== event.target.textContent) {
+                choice.classList.remove("is-active");
+            }
+        });
         setTeam(event.target.textContent.toLowerCase());
         document.getElementById("team-filter").classList.toggle("is-active");
     }
@@ -384,6 +391,13 @@ export default function Portfolio() {
     }
 
     function handleStarterChange(event) {
+        event.target.classList.add("is-active");
+        const starterChoices = document.querySelectorAll("#starter-dropdown-menu .dropdown-content .dropdown-item");
+        starterChoices.forEach(choice => {
+            if (choice.classList.contains("is-active") && choice.textContent !== event.target.textContent) {
+                choice.classList.remove("is-active");
+            }
+        });
         if (event.target.textContent === "Provided") {
             setStarter(true);
         }
@@ -399,6 +413,13 @@ export default function Portfolio() {
     }
 
     function handleSortChange(event) {
+        event.target.classList.add("is-active");
+        const sortChoices = document.querySelectorAll("#sort-dropdown-menu .dropdown-content .dropdown-item");
+        sortChoices.forEach(choice => {
+            if (choice.classList.contains("is-active") && choice.textContent !== event.target.textContent) {
+                choice.classList.remove("is-active");
+            }
+        });
         setSort(event.target.textContent);
         document.getElementById("sort").classList.toggle("is-active");
     }
