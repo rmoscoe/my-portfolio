@@ -33,11 +33,10 @@ export default function Contact() {
                     throw new Error(`${response.statusText} (${response.status})`);
                 }
 
-                return response.json();
-            })
-            .then(() => {
                 setSubmitted(true);
                 setLoading(false);
+                
+                return response.json();
             })
             .catch((err) => {
                 setError(err.toString());
@@ -130,6 +129,7 @@ export default function Contact() {
         }
 
         sendEmail(data);
+        console.log(submitted, error, loading);
 
         setcontactName('');
         setMessage('');
@@ -195,11 +195,11 @@ export default function Contact() {
                         {/* <p className="help is-danger">{notification}</p> */}
                     </div>
                     <div className="control is-flex is-justify-content-flex-end my-5">
-                        <input className="button is-fullwidth is-size-5" id="contact-submit" type="submit" />
+                        <input className="button is-small is-fullwidth is-size-5" id="contact-submit" type="submit" />
                     </div>
                 </form>
                 {notification && (
-                    <div>
+                    <div className="error-div">
                         <p className="error-text">{notification}</p>
                     </div>
                 )}

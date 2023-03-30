@@ -30,3 +30,9 @@ textarea {
 .form-container {
     width:100%;
 }
+
+.error-div {
+    max-width:90ch;
+    margin-left: auto;
+    margin-right: auto;
+}
