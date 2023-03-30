@@ -149,7 +149,7 @@ export default function Contact() {
     return (
         <section className="link-to">
             <h2>Contact</h2>
-            <div className="container">
+            <div className="container form-container">
                 <form className="form" id="contact-form" onSubmit={handleFormSubmit}>
                     <div className="field">
                         <label className="label">Email</label>
@@ -194,8 +194,8 @@ export default function Contact() {
                         />
                         {/* <p className="help is-danger">{notification}</p> */}
                     </div>
-                    <div className="control">
-                        <input type="submit" />
+                    <div className="control is-flex is-justify-content-flex-end my-5">
+                        <input className="button is-fullwidth is-size-5" id="contact-submit" type="submit" />
                     </div>
                 </form>
                 {notification && (

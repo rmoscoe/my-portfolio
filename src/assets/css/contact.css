@@ -1,5 +1,8 @@
 #contact-form {
-    max-width:120ch;
+    max-width:90ch;
+    align-self:center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .label {
@@ -16,4 +19,14 @@
 
 textarea {
     width:100% !important;
+}
+
+#contact-submit {
+    background-color:var(--main-accent-color);
+    color:white;
+    align-self: flex-end;
+}
+
+.form-container {
+    width:100%;
 }
