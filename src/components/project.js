@@ -54,7 +54,6 @@ export default function Project(props) {
                                             </a>
                                         </li>
                                     </ul>
-                                    <p className="description-mobile is-size-6">{project.description}</p>
                                     <ul className="tech-stack">
                                         <Tech technologies={project.techStack} />
                                     </ul>
