@@ -38,29 +38,29 @@ export default function Resume() {
 
     useEffect(() => {assignTargets()});
 
-    function downloadResume() {
-        fetch("Ryan Moscoe Resume.docx")
-            .then(response => {
-                response.blob()
-                    .then(blob => {
-                        const fileURL = window.URL.createObjectURL(blob);
-                        let alink = document.createElement('a');
-                        alink.href = fileURL;
-                        alink.download = "Ryan Moscoe Resume.docx";
-                        alink.click();
-                    });
-            });
-    }
+    // function downloadResume() {
+    //     fetch("Ryan Moscoe Resume.docx")
+    //         .then(response => {
+    //             response.blob()
+    //                 .then(blob => {
+    //                     const fileURL = window.URL.createObjectURL(blob);
+    //                     let alink = document.createElement('a');
+    //                     alink.href = fileURL;
+    //                     alink.download = "Ryan Moscoe Resume.docx";
+    //                     alink.click();
+    //                 });
+    //         });
+    // }
 
     return (
         <section className="link-to">
             <h2>Resume</h2>
             <section className="hero">
-                <section className="hero-body justify-content-center align-content-center">
-                    <p className="is-size-4 has-text-centered" onClick={downloadResume}>
+                <section className="hero-body is-flex justify-content-center align-content-center">
+                    <a className="resume-download is-size-3 is-align-self-center has-text-centered" href="/Ryan%20Moscoe%20Resume.docx" download>
                         <i className="fa-regular fa-file-word"></i>
                         <span className="ml-2">Download Resume</span>
-                    </p>
+                    </a>
                 </section>
             </section>
             <section className="tile is-ancestor mx-3">
