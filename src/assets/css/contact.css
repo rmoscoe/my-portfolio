@@ -36,3 +36,13 @@ textarea {
     margin-left: auto;
     margin-right: auto;
 }
+
+.invalid-entry {
+    border-color: var(--other-accent-color);
+    border-width:3px;
+    color:var(--other-accent-color);
+}
+
+.invalid {
+    color:var(--other-accent-color);
+}
