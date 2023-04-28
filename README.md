@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# My Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technology Used 
 
-## Available Scripts
+| Technology Used         | Resource URL           | 
+| ------------- |:-------------:| 
+| HTML    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) | 
+| CSS     | [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)      |   
+| Git | [https://git-scm.com/](https://git-scm.com/)     |    
+| JavaScript | [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
+| Node.js | [https://nodejs.org/en](https://nodejs.org/en) |
+| Bulma | [https://bulma.io/](https://bulma.io/) |
+| React.js | [https://react.dev/](https://react.dev/) |
+| Herotofu | [https://herotofu.com/](https://herotofu.com/) |
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
+## Description 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Visit the Deployed Site](https://rmoscoe.github.io/my-portfolio/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I built this responsive website as a portfolio to showcase my work. The projects in my portfolio demonstrate my skill with a variety of technologies, as well as my evolution as a developer. The portfolio itself also serves as an example of my skill with HTML, CSS, JavaScript and Node.js, the Bulma CSS framework, and the React front-end framework.
 
-### `npm test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Portfolio homepage (About Me)](./assets/images/portfolio.png)
 
-### `npm run build`
+<br/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Learning Points 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In completing this project, I learned a lot about React:
+* Creating a React App
+* React Hooks
+  - useState
+  - useEffect
+  - useCallback
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+In addition, I learned about the download attribute for the HTML anchor (\<a>) tag and Herotofu for emailing form submission data.
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Author Info
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Ryan Moscoe 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* [Portfolio](https://rmoscoe.github.io/my-portfolio/)
+* [LinkedIn](https://www.linkedin.com/in/ryan-moscoe-8652973/)
+* [Github](https://github.com/rmoscoe)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<br/>
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+See repository for license information.

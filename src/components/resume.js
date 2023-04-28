@@ -1,9 +1,8 @@
-import React, { useRef, useCallback, useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import Skill from "./skill";
 import "../assets/css/resume.css";
 
 export default function Resume() {
-    // const ref = useRef(null);
 
     const animationOptions = {
         root: null,
@@ -37,20 +36,6 @@ export default function Resume() {
     }, []);
 
     useEffect(() => {assignTargets()});
-
-    // function downloadResume() {
-    //     fetch("Ryan Moscoe Resume.docx")
-    //         .then(response => {
-    //             response.blob()
-    //                 .then(blob => {
-    //                     const fileURL = window.URL.createObjectURL(blob);
-    //                     let alink = document.createElement('a');
-    //                     alink.href = fileURL;
-    //                     alink.download = "Ryan Moscoe Resume.docx";
-    //                     alink.click();
-    //                 });
-    //         });
-    // }
 
     return (
         <section className="link-to">

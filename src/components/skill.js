@@ -1,4 +1,4 @@
-import React, { useRef, useCallback, useEffect } from "react";
+import React, { useCallback, useEffect } from "react";
 import Subskill from "./subskill";
 import "../assets/css/skill.css";
 
