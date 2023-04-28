@@ -21,12 +21,15 @@ export default function Tech(props) {
         MongoDB: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
         GitHub: "ttps://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
         React: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        graphQL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
+        graphQL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+        Python: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+        Flask: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+        SQLAlchemy: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-plain.svg"
     };
 
     return props.technologies.map((tech, i) => (
         <li key={`tech-${i}`}>
-            {techIcons[tech] && (tech === "Express-Handlebars" || tech === "MySql" || tech === "Express.js" ? <img src={techIcons[tech]} alt="Logo for listed technology" className="tech filter-white" /> : <img src={techIcons[tech]} alt="Logo for listed technology" className="tech" />)}
+            {techIcons[tech] && (["Express-Handlebars", "MySql", "Express.js", "Flask", "SQLAlchemy"].includes(tech) ? <img src={techIcons[tech]} alt="Logo for listed technology" className="tech filter-white" /> : <img src={techIcons[tech]} alt="Logo for listed technology" className="tech" />)}
             <span>{tech}</span>
         </li>
     ));

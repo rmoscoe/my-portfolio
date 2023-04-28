@@ -233,6 +233,21 @@ export default function Portfolio() {
             scope: "full-stack",
             starterCode: false,
             defaultPosition: 7
+        },
+        {
+            id: 16,
+            name: "Just Tech News",
+            dateCreated: "04/27/2023",
+            imageSource: "./images/JustTechNews.png",
+            imgAlt: "Screenshot showing the homepage with a list of posts",
+            deployedLink: "https://just-tech-news-rmoscoe.herokuapp.com/",
+            githubLink: "https://github.com/rmoscoe/python-newsfeed",
+            description: "Just Tech News allows users to post links to news stories related to technology, comment on each others' posts, and upvote (like) posts. For this project, I refactored the back end of an existing application to use Python instead of Node.js, which also required a few small changes to the front end.",
+            techStack: ["Python", "Flask", "Jinja2", "MySQL", "SQLAlchemy", "Green Unicorn", "Heroku"],
+            team: "solo",
+            scope: "back-end",
+            starterCode: true,
+            defaultPosition: 8
         }
     ]);
     const [technologies, setTechnologies] = useState([]);
