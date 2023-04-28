@@ -44,7 +44,7 @@ export default function Skill () {
         details: ["Java", "C", "Python", "HTML", "CSS", "JavaScript", "Node.js", "MySQL", "MongoDB"]
     }, {
         category:"Frameworks and Libraries",
-        details: ["Bootstrap", "Bulma", "jQuery", "Umbrella.JS", "Express", "React", "Flask", "Express-Handlebars", "Jinja2", "Sequelize", "SQLAlchemy", "Mongoose", "GraphQL"]
+        details: ["Bootstrap", "Bulma", "jQuery", "Umbrella.JS", "Express", "React", "Flask", "Express-Handlebars", "Jinja2", "Sequelize", "SQLAlchemy", "Mongoose", "GraphQL", "JUnit", "Jest"]
     }, {
         category: "Development Tools",
         details: ["IDEs (VSCode, IntelliJ)", "Terminal (zsh)", "Git", "GitHub", "Jupyter"]
