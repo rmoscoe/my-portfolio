@@ -248,6 +248,21 @@ export default function Portfolio() {
             scope: "back-end",
             starterCode: true,
             defaultPosition: 8
+        },
+        {
+            id: 17,
+            name: "Just Tech News",
+            dateCreated: "05/25/2023",
+            imageSource: "./images/techNewsJava.png",
+            imgAlt: "Screenshot showing a form to edit a post, with buttons to edit the title or delete the post",
+            deployedLink: "https://just-tech-news-java.herokuapp.com/",
+            githubLink: "https://github.com/rmoscoe/tech-news-java-api",
+            description: "Just Tech News allows users to post links to news stories related to technology, comment on each others' posts, and upvote (like) posts. For this project, I refactored the back end of an existing application to use Java instead of Node.js, which also required me to rebuild the front end.",
+            techStack: ["Java", "Spring Boot", "Thymeleaf", "MySQL", "Heroku"],
+            team: "solo",
+            scope: "full-stack",
+            starterCode: true,
+            defaultPosition: 37
         }
     ]);
     const [technologies, setTechnologies] = useState([]);
