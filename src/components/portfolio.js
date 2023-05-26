@@ -312,7 +312,7 @@ export default function Portfolio() {
                 return false;
             });
             filteredArr = techArr;
-        }
+        } 
         if (team) {
             const teamArr = filteredArr.filter((project) => {
                 return project.team === team;

@@ -4,28 +4,28 @@ import "../assets/css/resume.css";
 
 export default function Resume() {
 
-    const animationOptions = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.25,
-    };
-
-    let observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach((entry) => {
-            if (entry.intersectionRatio >= 0.25) {
-                entry.target.classList.add("fade-in");
-            }
-            if (entry.intersectionRatio < 0.25 && entry.target.classList.contains("fade-in")) {
-                entry.target.classList.remove("fade-in");
-                entry.target.classList.add("fade-out");
-            }
-            if (!entry.target.isVisible) {
-                entry.target.classList.remove("fade-out");
-            }
-        });
-    }, animationOptions);
-
     const assignTargets = useCallback(() => {
+        const animationOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.25,
+        };
+
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.intersectionRatio >= 0.25) {
+                    entry.target.classList.add("fade-in");
+                }
+                if (entry.intersectionRatio < 0.25 && entry.target.classList.contains("fade-in")) {
+                    entry.target.classList.remove("fade-in");
+                    entry.target.classList.add("fade-out");
+                }
+                if (!entry.target.isVisible) {
+                    entry.target.classList.remove("fade-out");
+                }
+            });
+        }, animationOptions);
+
         let targets = document.querySelectorAll(".experience");
 
         if (targets.length > 0) {

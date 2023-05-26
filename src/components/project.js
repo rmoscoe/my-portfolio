@@ -11,7 +11,7 @@ export default function Project(props) {
         threshold: 0.25,
     };
 
-    let observer = new IntersectionObserver((entries, observer) => {
+    let observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.intersectionRatio >= 0.25) {
                 entry.target.classList.add("fade-in");
