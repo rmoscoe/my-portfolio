@@ -42,7 +42,7 @@ export default function Resume() {
             <h2>Resume</h2>
             <section className="hero">
                 <section className="hero-body is-flex justify-content-center align-content-center">
-                    <a className="resume-download is-size-3 is-align-self-center has-text-centered" href="/build/Ryan%20Moscoe%20Resume.docx" download>
+                    <a className="resume-download is-size-3 is-align-self-center has-text-centered" href="/blob/gh-pages/Ryan%20Moscoe%20Resume.docx" download>
                         <i className="fa-regular fa-file-word"></i>
                         <span className="ml-2">Download Resume</span>
                     </a>
