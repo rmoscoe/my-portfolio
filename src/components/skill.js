@@ -41,10 +41,10 @@ export default function Skill () {
 
     const skills = [{
         category:"Tech Stack",
-        details: ["Java", "C", "Python", "HTML", "CSS", "JavaScript", "Node.js", "MySQL", "MongoDB"]
+        details: ["HTML", "CSS", "JavaScript", "Node.js", "Python", "Java", "C", "MySQL", "MongoDB"]
     }, {
         category:"Frameworks and Libraries",
-        details: ["Bootstrap", "Bulma", "jQuery", "Umbrella.JS", "Express", "React", "Flask", "Express-Handlebars", "Jinja2", "Sequelize", "SQLAlchemy", "Mongoose", "GraphQL", "JUnit", "Jest"]
+        details: ["Bootstrap", "Bulma", "jQuery", "Umbrella.JS", "Express", "React", "Flask", "Express-Handlebars", "Jinja2", "Spring Boot", "Thymeleaf", "Sequelize", "SQLAlchemy", "Mongoose", "GraphQL", "JUnit", "Jest"]
     }, {
         category: "Development Tools",
         details: ["IDEs (VSCode, IntelliJ)", "Terminal (zsh)", "Git", "GitHub", "Jupyter"]
