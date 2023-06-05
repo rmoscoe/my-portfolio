@@ -263,6 +263,21 @@ export default function Portfolio() {
             scope: "full-stack",
             starterCode: true,
             defaultPosition: 37
+        },
+        {
+            id: 18,
+            name: "CatWorx Badgemaker",
+            dateCreated: "06/05/2023",
+            imageSource: "./images/prompts.png",
+            imgAlt: "Screenshot showing text prompts in a command line application asking for a first name, last name, ID, and photo URL",
+            videoLink: "https://drive.google.com/file/d/1-nPDNNswVXW17SjJmQRwMJKwN2Mfah2t/view?usp=sharing",
+            githubLink: "https://github.com/rmoscoe/catworx-badgemaker",
+            description: "This command line application generates employee ID badges. The user has the option to import employee data automatically or enter data manually. The application then persists the data to a .csv file and generates an image of an ID badge for each employee.",
+            techStack: ["C#", ".NET", "SkiaSharp", "Json.NET"],
+            team: "solo",
+            scope: "back-end",
+            starterCode: true,
+            defaultPosition: 22
         }
     ]);
     const [technologies, setTechnologies] = useState([]);
