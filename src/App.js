@@ -33,7 +33,7 @@ function App() {
           <aside id="hook">
             <h1>Ryan Moscoe</h1>
             <p className="headline">Software Engineer | Problem Solver | Ninja</p>
-            <p>If you are looking for a coding ninja, look no further. I code in Java, Python, C, JavaScript, HTML, and CSS. In my spare time, I practice--you guessed it--ninjutsu.</p>
+            <p>If you are looking for a coding ninja, look no further. I code in HTML, CSS, JavaScript, Python, Java, C#, and C. In my spare time, I practice--you guessed it--ninjutsu.</p>
           </aside>
         </section>
         <PortfolioContainer currentPage={currentPage} />
