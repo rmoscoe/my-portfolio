@@ -17,11 +17,18 @@ export default function Nav({ currentPage, handlePageChange }) {
                     About Me
                 </a>
                 <a
-                    href="#portfolio"
-                    onClick={() => handlePageChange("Portfolio")}
-                    className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                    href="#software"
+                    onClick={() => handlePageChange("Software Engineering")}
+                    className={currentPage === 'software' ? 'nav-link active' : 'nav-link'}
                 >
-                    Portfolio
+                    Software Engineering
+                </a>
+                <a
+                    href="#ai"
+                    onClick={() => handlePageChange("AI Prompt Engineering")}
+                    className={currentPage === 'ai' ? 'nav-link active' : 'nav-link'}
+                >
+                    AI Prompt Engineering
                 </a>
                 <a
                     href="#resume"
@@ -46,8 +53,8 @@ export default function Nav({ currentPage, handlePageChange }) {
                     <span aria-hidden="true"></span>
                 </div>
             }
-            {hamburgerActive && 
-                <Hamburger toggleHamburger={toggleHamburger} hamburgerActive={hamburgerActive} currentPage={currentPage} handlePageChange={handlePageChange}/>
+            {hamburgerActive &&
+                <Hamburger toggleHamburger={toggleHamburger} hamburgerActive={hamburgerActive} currentPage={currentPage} handlePageChange={handlePageChange} />
             }
         </header>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import "../assets/css/nav.css";
 
-export default function Hamburger({ toggleHamburger, hamburgerActive, currentPage, handlePageChange }) {
+export default function Hamburger({ toggleHamburger, currentPage, handlePageChange }) {
     return (
         <nav className="is-mobile is-block-mobile">
             <section className="is-full nav-link is-flex is-justify-content-end">
@@ -17,11 +17,18 @@ export default function Hamburger({ toggleHamburger, hamburgerActive, currentPag
                 About Me
             </a>
             <a
-                href="#portfolio"
-                onClick={() => handlePageChange("Portfolio")}
-                className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                href="#software"
+                onClick={() => handlePageChange("Software Engineering")}
+                className={currentPage === 'software' ? 'nav-link active' : 'nav-link'}
             >
-                Portfolio
+                Software Engineering
+            </a>
+            <a
+                href="#ai"
+                onClick={() => handlePageChange("AI Prompt Engineering")}
+                className={currentPage === 'ai' ? 'nav-link active' : 'nav-link'}
+            >
+                AI Prompt Engineering
             </a>
             <a
                 href="#resume"

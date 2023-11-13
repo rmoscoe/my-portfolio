@@ -1,7 +1,8 @@
 import React from 'react';
 import About from './about';
 import Contact from './contact';
-import Portfolio from './portfolio';
+import Software from './software';
+import AI from './AI';
 import Resume from "./resume";
 
 export default function PortfolioContainer({ currentPage }) {
@@ -11,8 +12,10 @@ export default function PortfolioContainer({ currentPage }) {
                 return <About />;
             case 'About':
                 return <About />;
-            case 'Portfolio':
-                return <Portfolio />;
+            case 'Software Engineering':
+                return <Software />;
+            case "AI Prompt Engineering":
+                return <AI />;
             case 'Contact':
                 return <Contact />;
             default:
