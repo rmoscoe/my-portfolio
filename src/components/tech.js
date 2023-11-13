@@ -27,12 +27,19 @@ export default function Tech(props) {
         SQLAlchemy: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-plain.svg",
         "Spring Boot": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
         "C#": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-        ".NET": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+        ".NET": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
+        Django: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+        TypeScript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+        TailwindCSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+        PaLM2: "./images/google-ai-1.svg",
+        Gencraft: "./images/gencraft.svg",
+        Thymeleaf: "./images/icons8-thymeleaf.svg",
+        Vite: "./images/icons8-vite.svg"
     };
 
     return props.technologies.map((tech, i) => (
         <li key={`tech-${i}`}>
-            {techIcons[tech] && (["Express-Handlebars", "MySql", "Express.js", "Flask", "SQLAlchemy"].includes(tech) ? <img src={techIcons[tech]} alt="Logo for listed technology" className="tech filter-white" /> : <img src={techIcons[tech]} alt="Logo for listed technology" className="tech" />)}
+            {techIcons[tech] && (["Express-Handlebars", "MySql", "Express.js", "Flask", "SQLAlchemy", "Django"].includes(tech) ? <img src={techIcons[tech]} alt="Logo for listed technology" className="tech filter-white" /> : <img src={techIcons[tech]} alt="Logo for listed technology" className="tech" />)}
             <span>{tech}</span>
         </li>
     ));

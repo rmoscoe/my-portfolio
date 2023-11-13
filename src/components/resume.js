@@ -53,6 +53,18 @@ export default function Resume() {
                     <h3>Experience</h3>
                     <div className="tile is-child box experience">
                         <p>
+                            <span className="emphasis">Bruce Clay, Inc. </span>
+                            Moorpark, CA (Remote)
+                        </p>
+                        <p className="italic">Software Engineer (Contract), 08/2023-Present</p>
+                        <ul className="p-3">
+                            <li>Created an analytics integrations hub using Python, Django, PosgreSQL, and CraftMyPDF.</li>
+                            <li>Cached reports from Google Looker Studio using Python, Django, SQLite, Huey, and Selenium.</li>
+                            <li>Debugged a complex application written in Elixir/Phoenix.</li>
+                        </ul>
+                    </div>
+                    <div className="tile is-child box experience">
+                        <p>
                             <span className="emphasis">Shield HealthCare </span>
                             Valencia, CA
                         </p>

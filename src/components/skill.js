@@ -41,13 +41,19 @@ export default function Skill () {
 
     const skills = [{
         category:"Tech Stack",
-        details: ["HTML", "CSS", "JavaScript", "Node.js", "Python", "Java", "C", "C#", "MySQL", "MongoDB"]
+        details: ["HTML", "CSS", "JavaScript", "Node.js", "TypeScript", "Python", "Java", "C", "C#", "MySQL", "PostgreSQL", "MongoDB"]
     }, {
         category:"Frameworks and Libraries",
-        details: ["Bootstrap", "Bulma", "jQuery", "Umbrella.JS", "Express", "React", "Flask", "Express-Handlebars", "Jinja2", "Spring Boot", "Thymeleaf", ".NET", "Sequelize", "SQLAlchemy", "Mongoose", "GraphQL", "JUnit", "Jest"]
+        details: ["Bootstrap", "Bulma", "TailwindCSS", "jQuery", "Umbrella.JS", "Express", "React", "Django", "Flask", "Express-Handlebars", "Jinja2", "Spring Boot", "Thymeleaf", ".NET", "Sequelize", "SQLAlchemy", "Psycopg", "Mongoose", "GraphQL", "JUnit", "Jest"]
     }, {
         category: "Development Tools",
-        details: ["IDEs (VSCode, IntelliJ)", "Terminal (zsh)", "Git", "GitHub", "Jupyter"]
+        details: ["IDEs (VSCode, IntelliJ)", "Terminal (zsh)", "Git", "GitHub", "Insomnia"]
+    }, {
+        category: "Computer Science",
+        details: ["Agile", "Data Structures", "Algorithms", "Object-Oriented Programming", "Functional Programming", "Design Patterns"]
+    }, {
+        category: "Artificial Intelligence",
+        details: ["PaLM2", "ChatGPT", "Bard", "Gencraft"]
     }, {
         category: "Leadership",
         details: ["Change Management", "Problem Solving", "Strategic Thinking"]
