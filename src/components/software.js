@@ -285,7 +285,7 @@ export default function Software() {
             dateCreated: "11/11/2023",
             imageSource: "./images/adventureDetailsFantasy.jpg",
             imgAlt: "Adventure Details page, showing boxes containing text for parts of an RPG adventure",
-            deployedLink: "odyssey-d4b3f26536d0.herokuapp.com/",
+            deployedLink: "https://odyssey-d4b3f26536d0.herokuapp.com/",
             githubLink: "https://github.com/rmoscoe/odyssey",
             description: "Odyssey uses the Google PaLM2 generative AI to craft thrilling adventures for tabletop roleplaying games in seconds. Choose from a large selection of the most popular games, enter a lesser-known title, or describe an unpublished/homebrew game. Refine your request with a campaign setting, number of players, experience level, and other parameters.",
             techStack: ["MySQL", "Python", "Django", "PaLM2", "Gencraft", "Vite", "TypeScript", "React", "CSS", "TailwindCSS", "Heroku"],
