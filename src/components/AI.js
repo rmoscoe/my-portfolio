@@ -10,7 +10,7 @@ export default function AI() {
             id: 19,
             name: "Odyssey",
             dateCreated: "11/11/2023",
-            imageSource: "./images.adventureDetailsFantasy.jpg",
+            imageSource: "./images/adventureDetailsFantasy.jpg",
             imgAlt: "Adventure Details page, showing boxes containing text for parts of an RPG adventure",
             deployedLink: "odyssey-d4b3f26536d0.herokuapp.com/",
             githubLink: "https://github.com/rmoscoe/odyssey",
