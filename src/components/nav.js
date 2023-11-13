@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/css/nav.css";
+import Hamburger from "./Hamburger";
 
 export default function Nav({ currentPage, handlePageChange }) {
+    const [hamburgerActive, setHamburgerActive] = useState(false);
+    const toggleHamburger = () => setHamburgerActive(!hamburgerActive);
 
     return (
         <header>
-            <nav>
+            <nav className="is-hidden-mobile is-flex-tablet">
                 <a
                     href="#about"
-                    // href="/"
                     onClick={() => handlePageChange("About")}
                     className={currentPage === 'About' || currentPage === "Home" ? 'nav-link active' : 'nav-link'}
                 >
@@ -36,6 +38,17 @@ export default function Nav({ currentPage, handlePageChange }) {
                     Contact
                 </a>
             </nav>
+            {!hamburgerActive &&
+                <div role="button" className="is-hidden-tablet is-size-3 has-text-right pr-2" onClick={toggleHamburger} aria-label="menu" aria-expanded="false">
+                    &#x2630;
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </div>
+            }
+            {hamburgerActive && 
+                <Hamburger toggleHamburger={toggleHamburger} hamburgerActive={hamburgerActive} currentPage={currentPage} handlePageChange={handlePageChange}/>
+            }
         </header>
 
     )

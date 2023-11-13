@@ -23,7 +23,7 @@ function App() {
             </div>
             <div className="container is-overlay is-align-self-center has-background-transparent">
               <h1 className="has-background-transparent shadow is-size-2">Ryan Moscoe</h1>
-              <p className="headline-mobile has-background-transparent shadow is-size-4">Software Engineer | Problem Solver | Ninja</p>
+              <p className="headline-mobile has-background-transparent shadow is-size-4">Software Engineer | AI Prompt Engineer | Ninja</p>
             </div>
           </div>
         </div>
@@ -32,8 +32,8 @@ function App() {
             alt="professional headshot" />
           <aside id="hook">
             <h1>Ryan Moscoe</h1>
-            <p className="headline">Software Engineer | Problem Solver | Ninja</p>
-            <p>If you are looking for a coding ninja, look no further. I code in HTML, CSS, JavaScript, Python, Java, C#, and C. In my spare time, I practice--you guessed it--ninjutsu.</p>
+            <p className="headline">Software Engineer | AI Prompt Engineer | Ninja</p>
+            <p>If you are looking for a coding ninja, look no further. I code in HTML, CSS, JavaScript, Python, Java, C#, and other languages. In my spare time, I practice--you guessed it--ninjutsu.</p>
           </aside>
         </section>
         <PortfolioContainer currentPage={currentPage} />
