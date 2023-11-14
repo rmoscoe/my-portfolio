@@ -177,8 +177,8 @@ export default function InstructionalDesign() {
             });
             filteredArr = teamArr;
         }
-        setShowElearning(type.includes("elearning"));
-        setShowClassroom(type.includes("classroom"));
+        setShowElearning(type.length === 0 || type.includes("elearning"));
+        setShowClassroom(type.length === 0 || type.includes("classroom"));
         return filteredArr;
     }, [type, team, tech]);
 

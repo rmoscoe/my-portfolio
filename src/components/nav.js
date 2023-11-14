@@ -31,6 +31,13 @@ export default function Nav({ currentPage, handlePageChange }) {
                     AI Prompt Engineering
                 </a>
                 <a
+                    href="#instructionaldesign"
+                    onClick={() => handlePageChange("Instructional Design")}
+                    className={currentPage === "Instructional Design" ? "nav-link active" : "nav-link"}
+                >
+                    Instructional Design
+                </a>
+                <a
                     href="#resume"
                     onClick={() => handlePageChange("Resume")}
                     className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}

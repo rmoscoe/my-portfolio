@@ -3,7 +3,7 @@ import About from './about';
 import Contact from './contact';
 import Software from './software';
 import AI from './AI';
-import InstructionalDesign from './instructionaldesign';
+import InstructionalDesign from './InstructionalDesign';
 import Resume from "./resume";
 
 export default function PortfolioContainer({ currentPage }) {
