@@ -138,6 +138,11 @@
     background-color: rgba(0,0,0,0.2);
 }
 
+.full-size {
+    height: 100%;
+    width:100%;
+}
+
 .project-image:hover {
     opacity:0.7;
 }
