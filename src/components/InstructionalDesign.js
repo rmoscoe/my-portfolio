@@ -101,13 +101,13 @@ export default function InstructionalDesign() {
                     },
                     {
                         name: "Facilitator Workbook",
-                        imageSource: "./images/performanceReviewTrainingFacilitator",
+                        imageSource: "./images/performanceReviewTrainingFacilitator.jpg",
                         imageAlt: "A logo above a purple rectangle with the course title",
                         deployedLink: "https://drive.google.com/file/d/1C8HElqSrUbtCnjSuDcH469ioJYzJtt2J/view?usp=drive_link"
                     },
                     {
                         name: "Participant Workbook",
-                        imageSource: "./images/performanceReviewTrainingParticipant",
+                        imageSource: "./images/performanceReviewTrainingParticipant.jpg",
                         imageAlt: "A logo above a purple rectangle with the course title",
                         deployedLink: "https://drive.google.com/file/d/1WeKrfrDI7orU6B2ExDdFAHwa1A9p29hQ/view?usp=drive_link"
                     }

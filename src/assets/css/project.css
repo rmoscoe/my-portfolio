@@ -134,6 +134,10 @@
     padding-right:1em !important;
 } */
 
+.translucent {
+    background-color: rgba(0,0,0,0.2);
+}
+
 .project-image:hover {
     opacity:0.7;
 }
