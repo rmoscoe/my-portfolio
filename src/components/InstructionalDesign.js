@@ -62,25 +62,25 @@ export default function InstructionalDesign() {
                         name: "Slide Deck",
                         imageSource: "./images/trainingNewTeamMemberPpt.jpg",
                         imageAlt: "An instructor standing in front of participants to the left of a logo and course title, above a gray and purple bar",
-                        link: "https://drive.google.com/file/d/1linkbezJZ1_g0jkGs5AFOI9-quh5OdiE/view"
+                        deployedLink: "https://drive.google.com/file/d/1linkbezJZ1_g0jkGs5AFOI9-quh5OdiE/view"
                     },
                     {
                         name: "Facilitator Workbook",
                         imageSource: "./images/trainingNewTeamMemberFacilitator.jpg",
                         imageAlt: "Facilitator workbook cover page",
-                        link: "https://drive.google.com/file/d/1f3T6Y6OYqqiiVCn0xo5I6nX1HDapvIhF/view"
+                        deployedLink: "https://drive.google.com/file/d/1f3T6Y6OYqqiiVCn0xo5I6nX1HDapvIhF/view"
                     },
                     {
                         name: "Participant Workbook",
                         imageSource: "./images/trainingNewTeamMemberParticipant.jpg",
                         imageAlt: "Participant workbook cover page",
-                        link: "https://drive.google.com/file/d/1MoggC-7IplM37GkeNgl1Py0qyS6JeC-O/view"
+                        deployedLink: "https://drive.google.com/file/d/1MoggC-7IplM37GkeNgl1Py0qyS6JeC-O/view"
                     },
                     {
                         name: "Job Aid",
                         imageSource: "./images/trainingNewTeamMemberJobAid.jpg",
                         imageAlt: "A job aid with three columns of information",
-                        link: "https://drive.google.com/file/d/1Z_UoOPJJUwBH13kWHw9Qe6gvZ5NWxDTg/view"
+                        deployedLink: "https://drive.google.com/file/d/1Z_UoOPJJUwBH13kWHw9Qe6gvZ5NWxDTg/view"
                     }
                 ]
             },
@@ -97,19 +97,19 @@ export default function InstructionalDesign() {
                         name: "Slide Deck",
                         imageSource: "./images/performanceReviewTrainingPpt.jpg",
                         imageAlt: "A purple title against a white background with purple bars in front of a brick wall",
-                        link: "https://drive.google.com/file/d/1oIOHo-4KmfiPCfmSkEDkGsWc6ANLsFnQ/view"
+                        deployedLink: "https://drive.google.com/file/d/1oIOHo-4KmfiPCfmSkEDkGsWc6ANLsFnQ/view"
                     },
                     {
                         name: "Facilitator Workbook",
                         imageSource: "./images/performanceReviewTrainingFacilitator",
                         imageAlt: "A logo above a purple rectangle with the course title",
-                        link: "https://drive.google.com/file/d/1C8HElqSrUbtCnjSuDcH469ioJYzJtt2J/view?usp=drive_link"
+                        deployedLink: "https://drive.google.com/file/d/1C8HElqSrUbtCnjSuDcH469ioJYzJtt2J/view?usp=drive_link"
                     },
                     {
                         name: "Participant Workbook",
                         imageSource: "./images/performanceReviewTrainingParticipant",
                         imageAlt: "A logo above a purple rectangle with the course title",
-                        link: "https://drive.google.com/file/d/1WeKrfrDI7orU6B2ExDdFAHwa1A9p29hQ/view?usp=drive_link"
+                        deployedLink: "https://drive.google.com/file/d/1WeKrfrDI7orU6B2ExDdFAHwa1A9p29hQ/view?usp=drive_link"
                     }
                 ]
             }
