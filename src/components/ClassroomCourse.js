@@ -1,11 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import Tech from "./tech";
 import CourseComponent from "./CourseComponent";
 import "../assets/css/project.css";
 
 export default function ClassroomCourse({ course }) {
-    const ref = useRef(null);
-
     const animationOptions = {
         root: null,
         rootMargin: "0px",
@@ -38,7 +36,7 @@ export default function ClassroomCourse({ course }) {
     const maxCols = course.components.length % 3 === 0 ? 3 : 2;
 
     return (
-        <section ref={ref} className="project column is-half" key={course.id * 20}>
+        <section className="project column is-half mb-4" key={course.id * 20}>
             <div className="project-background">
                 <h3>{course.name}</h3>
                 <div className="is-flex is-flex-wrap-nowrap is-justify-content-space-between is-align-items-flex-end">
@@ -50,7 +48,7 @@ export default function ClassroomCourse({ course }) {
                 <div className="box description">
                     <p>{course.description}</p>
                 </div>
-                <div className="columns">
+                <div className="columns is-multiline">
                     {course.components.map((component, i) => (
                         <CourseComponent key={course.id * i} component={component} maxCols={maxCols} />
                     ))}

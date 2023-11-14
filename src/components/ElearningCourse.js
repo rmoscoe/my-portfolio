@@ -1,10 +1,8 @@
-import React, { useRef } from "react";
+import React from "react";
 import Tech from "./tech";
 import "../assets/css/project.css";
 
 export default function ElearningCourse({ course }) {
-    const ref = useRef(null);
-
     const animationOptions = {
         root: null,
         rootMargin: "0px",
@@ -35,7 +33,7 @@ export default function ElearningCourse({ course }) {
     }
 
     return (
-        <section ref={ref} className="project column is-half" key={course.id * 5}>
+        <section className="project column is-half mb-4" key={course.id * 5}>
             <div className="project-background">
                 <h3 className="is-hidden-mobile">{course.name}</h3>
                 <div className="columns">
