@@ -3,6 +3,7 @@ import About from './about';
 import Contact from './contact';
 import Software from './software';
 import AI from './AI';
+import InstructionalDesign from './instructionaldesign';
 import Resume from "./resume";
 
 export default function PortfolioContainer({ currentPage }) {
@@ -16,6 +17,8 @@ export default function PortfolioContainer({ currentPage }) {
                 return <Software />;
             case "AI Prompt Engineering":
                 return <AI />;
+            case "Instructional Design":
+                return <InstructionalDesign />;
             case 'Contact':
                 return <Contact />;
             default:

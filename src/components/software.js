@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useCallback } from "react";
 import Project from "./project";
 import MenuItem from "./menuItem";
@@ -5,7 +6,7 @@ import MenuChoice from "./menuChoice";
 import "../assets/css/portfolio.css";
 
 export default function Software() {
-    const [projects, setProjects] = useState([
+    const [projects] = useState([
         {
             id: 1,
             name: "Bullet Journal",
@@ -324,10 +325,10 @@ export default function Software() {
     const [starter, setStarter] = useState(null);
     const [sort, setSort] = useState("default");
     
-    const [teamOptions, setTeamOptions] = useState(["solo", "group"]);
-    const [scopeOptions, setScopeOptions] = useState(["back-end", "front-end", "full-stack"]);
-    const [starterOptions, setStarterOptions] = useState(["Provided", "Not Provided"]);
-    const [sortOptions, setSortOptions] = useState(["Default", "A-Z", "Z-A", "Recent"]);
+    const [teamOptions] = useState(["solo", "group"]);
+    const [scopeOptions] = useState(["back-end", "front-end", "full-stack"]);
+    const [starterOptions] = useState(["Provided", "Not Provided"]);
+    const [sortOptions] = useState(["Default", "A-Z", "Z-A", "Recent"]);
     const [transformedProjects, setTransformedProjects] = useState(projects);
 
     const filterProjects = useCallback((projectArr) => {

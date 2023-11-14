@@ -34,7 +34,11 @@ export default function Tech(props) {
         PaLM2: "./images/google-ai-1.svg",
         Gencraft: "./images/gencraft.svg",
         Thymeleaf: "./images/icons8-thymeleaf.svg",
-        Vite: "./images/icons8-vite.svg"
+        Vite: "./images/icons8-vite.svg",
+        "Articulate Storyline 360": "./images/storyline.svg",
+        "Articulate Rise 360": "./images/rise.svg",
+        "Microsoft PowerPoint": "./images/microsoft-office-powerpoint-2018-present--1.svg",
+        "Microsoft Word": "./images/word-1.svg"
     };
 
     return props.technologies.map((tech, i) => (
