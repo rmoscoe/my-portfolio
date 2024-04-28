@@ -299,7 +299,7 @@ export default function Software() {
             id: 20,
             name: "MoveMinder",
             dateCreated: "04/27/2024",
-            imageSource: "./images/dashboard-light.jpeg",
+            imageSource: "./images/dashboard-light.jpg",
             imgAlt: "Dashboard page, showing upcoming moves, a pie chart, quick access buttons, and a list of recently viewed pages",
             deployedLink: "https://moveminder-tracker-f210fd4c1414.herokuapp.com/",
             githubLink: "https://github.com/rmoscoe/move-minder",
