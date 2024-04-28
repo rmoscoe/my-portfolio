@@ -20,7 +20,7 @@ export default function Software() {
             team: "group",
             scope: "full-stack",
             starterCode: false,
-            defaultPosition: 5
+            defaultPosition: 10
         },
         {
             id: 2,
@@ -188,7 +188,7 @@ export default function Software() {
             scope: "full-stack",
             skills: ["progressive web apps"],
             starterCode: true,
-            defaultPosition: 10
+            defaultPosition: 13
         },
         {
             id: 13,
@@ -218,7 +218,7 @@ export default function Software() {
             team: "group",
             scope: "full-stack",
             starterCode: false,
-            defaultPosition: 3
+            defaultPosition: 7
         },
         {
             id: 15,
@@ -233,7 +233,7 @@ export default function Software() {
             team: "solo",
             scope: "full-stack",
             starterCode: false,
-            defaultPosition: 7
+            defaultPosition: 8
         },
         {
             id: 16,
@@ -248,7 +248,7 @@ export default function Software() {
             team: "solo",
             scope: "back-end",
             starterCode: true,
-            defaultPosition: 8
+            defaultPosition: 9
         },
         {
             id: 17,
@@ -290,6 +290,21 @@ export default function Software() {
             githubLink: "https://github.com/rmoscoe/odyssey",
             description: "Odyssey uses the Google PaLM2 generative AI to craft thrilling adventures for tabletop roleplaying games in seconds. Choose from a large selection of the most popular games, enter a lesser-known title, or describe an unpublished/homebrew game. Refine your request with a campaign setting, number of players, experience level, and other parameters.",
             techStack: ["MySQL", "Python", "Django", "PaLM2", "Gencraft", "Vite", "TypeScript", "React", "CSS", "TailwindCSS", "Heroku"],
+            team: "solo",
+            scope: "full-stack",
+            starterCode: false,
+            defaultPosition: 5
+        },
+        {
+            id: 20,
+            name: "MoveMinder",
+            dateCreated: "04/27/2024",
+            imageSource: "./images/dashboard-light.png",
+            imgAlt: "Dashboard page, showing upcoming moves, a pie chart, quick access buttons, and a list of recently viewed pages",
+            deployedLink: "https://moveminder-tracker-f210fd4c1414.herokuapp.com/",
+            githubLink: "https://github.com/rmoscoe/move-minder",
+            description: "MoveMinder lets you track the contents and status of every box, appliance, and piece of furniture throughout a move. Create a record for each move and each parcel, including its type, contents, and weight, as well as the room in which it belongs. Print labels with a QR code for each parcel, and scan the QR code to update the parcel's status.",
+            techStack: ["Python", "Django", "HTML", "CSS", "TailwindCSS", "JavaScript", "Node.js", "PostgreSQL", "AWS", "Heroku", "Gemini"],
             team: "solo",
             scope: "full-stack",
             starterCode: false,

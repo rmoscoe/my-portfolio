@@ -30,15 +30,17 @@ export default function Tech(props) {
         ".NET": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
         Django: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
         TypeScript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-        TailwindCSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+        TailwindCSS: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
         PaLM2: "./images/google-ai-1.svg",
         Gencraft: "./images/gencraft.svg",
         Thymeleaf: "./images/icons8-thymeleaf.svg",
-        Vite: "./images/icons8-vite.svg",
+        Vite: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vite/vite-original.svg",
         "Articulate Storyline 360": "./images/storyline.svg",
         "Articulate Rise 360": "./images/rise.svg",
         "Microsoft PowerPoint": "./images/microsoft-office-powerpoint-2018-present--1.svg",
-        "Microsoft Word": "./images/word-1.svg"
+        "Microsoft Word": "./images/word-1.svg",
+        PostgreSQL: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+        AWS: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
     };
 
     return props.technologies.map((tech, i) => (

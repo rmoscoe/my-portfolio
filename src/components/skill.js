@@ -52,8 +52,11 @@ export default function Skill () {
         category: "Computer Science",
         details: ["Agile", "Data Structures", "Algorithms", "Object-Oriented Programming", "Functional Programming", "Design Patterns"]
     }, {
+        category: "Cloud",
+        details: ["Heroku", "AWS"]
+    },{
         category: "Artificial Intelligence",
-        details: ["PaLM2", "ChatGPT", "Bard", "Gencraft"]
+        details: ["Gemini", "PaLM2", "ChatGPT", "Bard", "Gencraft"]
     }, {
         category: "Leadership",
         details: ["Change Management", "Problem Solving", "Strategic Thinking"]
