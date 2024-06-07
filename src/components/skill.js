@@ -56,7 +56,7 @@ export default function Skill () {
         details: ["Heroku", "AWS"]
     },{
         category: "Artificial Intelligence",
-        details: ["Gemini", "PaLM2", "ChatGPT", "Bard", "Gencraft"]
+        details: ["Gemini", "ChatGPT", "Gencraft"]
     }, {
         category: "Leadership",
         details: ["Change Management", "Problem Solving", "Strategic Thinking"]

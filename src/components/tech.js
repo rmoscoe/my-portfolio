@@ -31,7 +31,7 @@ export default function Tech(props) {
         Django: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
         TypeScript: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
         TailwindCSS: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-        PaLM2: "./images/google-ai-1.svg",
+        Gemini: "./images/google-ai-1.svg",
         Gencraft: "./images/gencraft.svg",
         Thymeleaf: "./images/icons8-thymeleaf.svg",
         Vite: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vite/vite-original.svg",
