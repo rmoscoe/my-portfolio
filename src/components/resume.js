@@ -56,10 +56,12 @@ export default function Resume() {
                             <span className="emphasis">Bruce Clay, Inc. </span>
                             Moorpark, CA (Remote)
                         </p>
-                        <p className="italic">Software Engineer (Contract), 08/2023-Present</p>
+                        <p className="italic">Software Engineer, 05/2024-Present</p>
+                        <p className="italic">Software Engineer (Contract), 08/2023-05/2024</p>
                         <ul className="p-3">
+                            <li>Created additional tools for a public-facing AI-powered content creation suite, including prompt engineering, using Python, Django, Openai, Pydantic, and Instructor</li>
+                            <li>Refactored the UI for a public-facing web application according to a new design using Python, Django, TailwindCSS, and Alpine.js</li>
                             <li>Created an analytics integrations hub using Python, Django, PosgreSQL, and CraftMyPDF.</li>
-                            <li>Cached reports from Google Looker Studio using Python, Django, SQLite, Huey, and Selenium.</li>
                             <li>Debugged a complex application written in Elixir/Phoenix.</li>
                         </ul>
                     </div>
@@ -86,7 +88,6 @@ export default function Resume() {
                         <ul className="p-3">
                             <li>Implemented an LMS and e-learning authoring tools. </li>
                             <li>Developed training and change management programs for 6 software implementations, numerous regulatory changes, and a redesigned product suite.</li>
-                            <li>Populated a sandbox environment with accounts and created numerous scenarios to enable practice and assessment before participants had to work with live accounts and customers in a branch.</li>
                         </ul>
                     </div>
                     <h3>Education</h3>

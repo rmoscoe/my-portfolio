@@ -41,10 +41,10 @@ export default function Skill () {
 
     const skills = [{
         category:"Tech Stack",
-        details: ["HTML", "CSS", "JavaScript", "Node.js", "TypeScript", "Python", "Java", "C", "C#", "MySQL", "PostgreSQL", "MongoDB"]
+        details: ["HTML", "CSS", "JavaScript", "Node.js", "TypeScript", "Python", "Java", "C", "C#", "Elixir", "MySQL", "PostgreSQL", "MongoDB"]
     }, {
         category:"Frameworks and Libraries",
-        details: ["Bootstrap", "Bulma", "TailwindCSS", "jQuery", "Umbrella.JS", "Express", "React", "Django", "Flask", "Express-Handlebars", "Jinja2", "Spring Boot", "Thymeleaf", ".NET", "Sequelize", "SQLAlchemy", "Psycopg", "Mongoose", "GraphQL", "JUnit", "Jest"]
+        details: ["Bootstrap", "Bulma", "TailwindCSS", "jQuery", "Umbrella.JS", "Express", "React", "Django", "Flask", "Express-Handlebars", "Jinja2", "Openai", "Pydantic", "Instructor", "Spring Boot", "Thymeleaf", ".NET", "Phoenix", "Sequelize", "SQLAlchemy", "Psycopg", "Mongoose", "GraphQL", "JUnit", "Jest"]
     }, {
         category: "Development Tools",
         details: ["IDEs (VSCode, IntelliJ)", "Terminal (zsh)", "Git", "GitHub", "Insomnia"]
@@ -56,7 +56,7 @@ export default function Skill () {
         details: ["Heroku", "AWS"]
     },{
         category: "Artificial Intelligence",
-        details: ["Gemini", "ChatGPT", "Gencraft"]
+        details: ["Gemini", "OpenAI", "ChatGPT", "Claude", "Gencraft"]
     }, {
         category: "Leadership",
         details: ["Change Management", "Problem Solving", "Strategic Thinking"]
