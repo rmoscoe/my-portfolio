@@ -48,11 +48,11 @@ export default function Project(props) {
                                     <ul className="project-links-mobile is-size-5">
                                         {project.deployedLink ? <li className="project-link"><a href={project.deployedLink} target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a></li> : <span></span>}
                                         {project.videoLink ? <li className="project-link"><a href={project.videoLink} target="_blank" rel="noreferrer"><i className="fa-solid fa-clapperboard"></i></a></li> : <span></span>}
-                                        <li className="project-link">
+                                        {project.githubLink && <li className="project-link">
                                             <a href={project.githubLink} target="_blank" rel="noreferrer">
                                                 <i className="fa-brands fa-github"></i>
                                             </a>
-                                        </li>
+                                        </li>}
                                     </ul>
                                     <ul className="tech-stack">
                                         <Tech technologies={project.techStack} />
@@ -65,11 +65,11 @@ export default function Project(props) {
                         <ul className="project-links">
                             {project.deployedLink && <li className="project-link"><a href={project.deployedLink} target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a></li>}
                             {project.videoLink && <li className="project-link"><a href={project.videoLink} target="_blank" rel="noreferrer"><i className="fa-solid fa-clapperboard"></i></a></li>}
-                            <li className="project-link">
+                            {project.githubLink && <li className="project-link">
                                 <a href={project.githubLink} target="_blank" rel="noreferrer">
                                     <i className="fa-brands fa-github"></i>
                                 </a>
-                            </li>
+                            </li>}
                         </ul>
                         <div className="box description">
                             <p>{project.description}</p>

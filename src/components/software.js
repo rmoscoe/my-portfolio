@@ -309,6 +309,21 @@ export default function Software() {
             scope: "full-stack",
             starterCode: false,
             defaultPosition: 1
+        },
+        {
+            id: 21,
+            name: "PreWriter",
+            dateCreated: "08/01/2024",
+            imageSource: "./images/prewriter.jpg",
+            imgAlt: "Dashboard page, showing left navigation menu and two content cards",
+            deployedLink: "https://www.prewriter.ai",
+            videoLink: "https://www.youtube.com/watch?v=illFYyVtgzA",
+            description: "PreWriter is an AI-driven content creation suite for SEO specialists and marketers. As part of the Bruce Clay, Inc., software development team, I contributed to this project by refactoring the entire UI to match a completely new design spec. I also added specific features, such as notifications upon completion of tool runs and content exports to Google Docs, Excel, .csv, and Google Sheets. Finally, I built a few of the tools in the suite, including the Article Citations, Page Validation, Prospect Targeting, and Keyword Research tools. This involved everything from prompt engineering, to database migrations, to back-end views, to front-end templating.",
+            techStack: ["Python", "Django", "PostgreSQL", "SQLite", "HTML", "CSS", "JavaScript", "TailwindCSS", "Node.js", "Alpine.js", "OpenAI", "LangChain"],
+            team: "group",
+            scope: "full-stack",
+            starterCode: false,
+            defaultPosition: 6
         }
     ]);
     const [technologies, setTechnologies] = useState([]);
